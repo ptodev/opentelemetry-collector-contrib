@@ -1,4 +1,4 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter
+module github.com/open-telemetry/opentelemetry-collector-contrib/pkg/filter
 
 go 1.18
 
