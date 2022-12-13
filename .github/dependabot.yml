@@ -359,7 +359,11 @@ updates:
     schedule:
       interval: "weekly"
   - package-ecosystem: "gomod"
-    directory: "/internal/filter"
+    directory: "/pkg/coreexternal"
+    schedule:
+      interval: "weekly"
+  - package-ecosystem: "gomod"
+    directory: "/pkg/filter"
     schedule:
       interval: "weekly"
   - package-ecosystem: "gomod"

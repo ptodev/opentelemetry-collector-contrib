@@ -92,7 +92,7 @@ body:
       - internal/comparetest
       - internal/core
       - internal/docker
-      - internal/filter
+      - pkg/filter
       - internal/k8sconfig
       - internal/kubelet
       - internal/metadataproviders
