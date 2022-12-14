@@ -369,7 +369,7 @@ require (
 	github.com/open-telemetry/opentelemetry-collector-contrib/internal/common v0.67.0 // indirect
 	github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal v0.67.0 // indirect
 	github.com/open-telemetry/opentelemetry-collector-contrib/internal/docker v0.67.0 // indirect
-	github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter v0.67.0 // indirect
+	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/filter v0.67.0 // indirect
 	github.com/open-telemetry/opentelemetry-collector-contrib/internal/k8sconfig v0.67.0 // indirect
 	github.com/open-telemetry/opentelemetry-collector-contrib/internal/kubelet v0.67.0 // indirect
 	github.com/open-telemetry/opentelemetry-collector-contrib/internal/metadataproviders v0.67.0 // indirect
@@ -1007,7 +1007,7 @@ replace github.com/googleapis/gnostic v0.5.6 => github.com/googleapis/gnostic v0
 // see https://github.com/distribution/distribution/issues/3590
 exclude github.com/docker/distribution v2.8.0+incompatible
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter => ../../internal/filter
+replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/filter => ../../pkg/filter
 
 retract v0.65.0
 

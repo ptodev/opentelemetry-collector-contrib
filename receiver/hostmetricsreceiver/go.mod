@@ -4,7 +4,7 @@ go 1.18
 
 require (
 	github.com/leoluk/perflib_exporter v0.2.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter v0.67.0
+	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/filter v0.67.0
 	github.com/shirou/gopsutil/v3 v3.22.10
 	github.com/stretchr/testify v1.8.1
 	go.opentelemetry.io/collector v0.67.0
@@ -77,7 +77,7 @@ require (
 
 replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal => ../../internal/coreinternal
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter => ../../internal/filter
+replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/filter => ../../pkg/filter
 
 retract v0.65.0
 

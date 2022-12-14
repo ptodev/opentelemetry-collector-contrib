@@ -156,7 +156,7 @@ require (
 	github.com/observiq/ctimefmt v1.0.0 // indirect
 	github.com/open-telemetry/opentelemetry-collector-contrib/internal/common v0.67.0 // indirect
 	github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal v0.67.0 // indirect
-	github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter v0.67.0 // indirect
+	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/filter v0.67.0 // indirect
 	github.com/open-telemetry/opentelemetry-collector-contrib/internal/sharedcomponent v0.67.0 // indirect
 	github.com/open-telemetry/opentelemetry-collector-contrib/internal/splunk v0.67.0 // indirect
 	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/batchperresourceattr v0.67.0 // indirect
@@ -464,7 +464,7 @@ replace github.com/open-telemetry/opentelemetry-collector-contrib/exporter/skywa
 
 replace github.com/open-telemetry/opentelemetry-collector-contrib/exporter/instanaexporter => ../../exporter/instanaexporter
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter => ../../internal/filter
+replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/filter => ../../pkg/filter
 
 replace github.com/open-telemetry/opentelemetry-collector-contrib/receiver/sqlqueryreceiver => ../../receiver/sqlqueryreceiver
 

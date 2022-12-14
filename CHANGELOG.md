@@ -62,7 +62,7 @@
 - `pkg/ottl`: Add new `merge` function to OTTL, which allows merging maps. (#16461)
 - `pkg/ottl`: Add ability to negate conditions with the `not` keyword (#16553)
 - `pkg/ottl`: Add new `ParseJSON` function that can convert a json string into `pcommon.Map`. (#16444)
-- `internal/filter`: Change filter interface to be compatible with ottl (#16443)
+- `pkg/filter`: Change filter interface to be compatible with ottl (#16443)
 - `receiver/awscontainerinsightreceiver`: Polish up awscontainerinsightreceiver README (#16378)
 - `pkg/translator/loki`: Remove loki dependency, copy files from logproto (#16822)
   Files copied from github.com/grafana/loki/pkg/logproto to remove unnecessary dependencies. 
@@ -114,7 +114,7 @@
 - `splunkhecreceiver`: Add a healthcheck endpoint as part of the splunkhecreceiver. Just returns 200 for now if the receiver is running. (#15367)
 - `filterprocessor`: Add ability to filter spans, span events, metrics, datapoints, and logs via OTTL conditions (#16369)
 - `googlecloudspannerreceiver`: Configurably mask the PII in lock stats metrics. (#16343)
-- `interna/coreinternal`: Split internal/coreinternal/processor into a separate internal/filter module (#16410)
+- `interna/coreinternal`: Split internal/coreinternal/processor into a separate pkg/filter module (#16410)
 
 ### 🧰 Bug fixes 🧰
 
