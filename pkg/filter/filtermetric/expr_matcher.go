@@ -12,12 +12,12 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package filtermetric // import "github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter/filtermetric"
+package filtermetric // import "github.com/open-telemetry/opentelemetry-collector-contrib/pkg/filter/filtermetric"
 
 import (
 	"context"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter/filterexpr"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/filter/filterexpr"
 	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/ottl/contexts/ottlmetric"
 )
 

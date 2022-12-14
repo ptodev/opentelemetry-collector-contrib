@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package filterspan // import "github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter/filterspan"
+package filterspan // import "github.com/open-telemetry/opentelemetry-collector-contrib/pkg/filter/filterspan"
 
 import (
 	"context"
@@ -22,10 +22,10 @@ import (
 	conventions "go.opentelemetry.io/collector/semconv/v1.6.1"
 
 	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/traceutil"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter/expr"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter/filterconfig"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter/filtermatcher"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter/filterset"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/filter/expr"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/filter/filterconfig"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/filter/filtermatcher"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/filter/filterset"
 	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/ottl/contexts/ottlspan"
 )
 

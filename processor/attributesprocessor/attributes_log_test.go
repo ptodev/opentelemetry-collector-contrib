@@ -25,10 +25,10 @@ import (
 	"go.opentelemetry.io/collector/consumer/consumertest"
 	"go.opentelemetry.io/collector/pdata/plog"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/attraction"
 	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/testdata"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter/filterconfig"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter/filterset"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/coreexternal/attraction"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/filter/filterconfig"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/filter/filterset"
 )
 
 // Common structure for all the Tests
