@@ -3,7 +3,7 @@ module github.com/open-telemetry/opentelemetry-collector-contrib/processor/cumul
 go 1.18
 
 require (
-	github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter v0.67.0
+	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/config/filter v0.0.0-00010101000000-000000000000
 	github.com/stretchr/testify v1.8.1
 	go.opentelemetry.io/collector v0.67.0
 	go.opentelemetry.io/collector/component v0.67.0
@@ -44,7 +44,7 @@ require (
 
 replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal => ../../internal/coreinternal
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter => ../../internal/filter
+replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/config/filter => ../../pkg/config/filter
 
 retract v0.65.0
 

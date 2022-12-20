@@ -24,10 +24,10 @@ import (
 	"go.opentelemetry.io/collector/pdata/plog"
 	"go.uber.org/multierr"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter/filterconfig"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter/filtermetric"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter/filterset"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter/filterset/regexp"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/config/filter/filterconfig"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/config/filter/filtermetric"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/config/filter/filterset"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/config/filter/filterset/regexp"
 	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/filterprocessor/internal/common"
 )
 

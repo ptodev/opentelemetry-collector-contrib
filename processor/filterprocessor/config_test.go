@@ -25,10 +25,10 @@ import (
 	"go.opentelemetry.io/collector/confmap/confmaptest"
 	"go.opentelemetry.io/collector/pdata/plog"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter/filterconfig"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter/filtermetric"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter/filterset"
-	fsregexp "github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter/filterset/regexp"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/config/filter/filterconfig"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/config/filter/filtermetric"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/config/filter/filterset"
+	fsregexp "github.com/open-telemetry/opentelemetry-collector-contrib/pkg/config/filter/filterset/regexp"
 )
 
 // TestLoadingConfigRegexp tests loading testdata/config_strict.yaml
