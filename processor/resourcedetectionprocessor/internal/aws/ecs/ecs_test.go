@@ -22,8 +22,8 @@ import (
 	"go.opentelemetry.io/collector/component/componenttest"
 	"go.opentelemetry.io/collector/pdata/pcommon"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/ecsutil"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/ecsutil/endpoints"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/aws/ecsutil"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/aws/ecsutil/endpoints"
 	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/resourcedetectionprocessor/internal"
 )
 

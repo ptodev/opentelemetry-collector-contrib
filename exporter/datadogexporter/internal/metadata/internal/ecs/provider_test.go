@@ -22,7 +22,7 @@ import (
 	"github.com/DataDog/datadog-agent/pkg/otlp/model/source"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/ecsutil"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/aws/ecsutil"
 )
 
 var _ ecsutil.MetadataProvider = (*mockProvider)(nil)

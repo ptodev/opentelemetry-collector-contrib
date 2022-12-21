@@ -22,8 +22,8 @@
 package main
 
 import (
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/components"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/otelcontribcore"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/components"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/otelcontribcore"
 )
 
 func main() {

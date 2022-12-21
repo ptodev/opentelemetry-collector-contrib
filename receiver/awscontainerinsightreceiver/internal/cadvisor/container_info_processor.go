@@ -26,7 +26,7 @@ import (
 	cInfo "github.com/google/cadvisor/info/v1"
 	"go.uber.org/zap"
 
-	ci "github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/containerinsight"
+	ci "github.com/open-telemetry/opentelemetry-collector-contrib/external/aws/containerinsight"
 	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/awscontainerinsightreceiver/internal/cadvisor/extractors"
 )
 

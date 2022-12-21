@@ -20,7 +20,7 @@ import (
 
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/ecsutil"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/aws/ecsutil"
 )
 
 // StatsProvider wraps a RestClient, returning an unmarshaled metadata and docker stats

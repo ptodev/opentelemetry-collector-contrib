@@ -21,8 +21,8 @@ import (
 	"go.uber.org/zap"
 	corev1 "k8s.io/api/core/v1"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/k8sconfig"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/kubelet"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/k8sconfig"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/kubelet"
 )
 
 type KubeletClient struct {

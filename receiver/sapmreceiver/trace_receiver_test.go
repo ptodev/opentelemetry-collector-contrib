@@ -38,8 +38,8 @@ import (
 	"go.opentelemetry.io/collector/pdata/ptrace"
 	conventions "go.opentelemetry.io/collector/semconv/v1.6.1"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/common/testutil"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/splunk"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/common/testutil"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/splunk"
 )
 
 func expectedTraceData(t1, t2, t3 time.Time) ptrace.Traces {

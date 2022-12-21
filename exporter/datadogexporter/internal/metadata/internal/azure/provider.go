@@ -22,7 +22,7 @@ import (
 	"github.com/DataDog/datadog-agent/pkg/otlp/model/source"
 
 	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/datadogexporter/internal/metadata/provider"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/metadataproviders/azure"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/metadataproviders/azure"
 )
 
 var _ source.Provider = (*Provider)(nil)

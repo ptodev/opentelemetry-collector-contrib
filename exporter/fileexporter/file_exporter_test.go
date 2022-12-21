@@ -32,7 +32,7 @@ import (
 	"go.opentelemetry.io/collector/pdata/ptrace"
 	"gopkg.in/natefinch/lumberjack.v2"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/testdata"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/coreinternal/testdata"
 )
 
 func buildUnCompressor(compressor string) func([]byte) ([]byte, error) {

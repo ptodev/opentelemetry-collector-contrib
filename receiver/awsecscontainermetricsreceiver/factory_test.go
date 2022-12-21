@@ -23,7 +23,7 @@ import (
 	"go.opentelemetry.io/collector/config/configtest"
 	"go.opentelemetry.io/collector/consumer/consumertest"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/ecsutil/endpoints"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/aws/ecsutil/endpoints"
 )
 
 func TestValidConfig(t *testing.T) {

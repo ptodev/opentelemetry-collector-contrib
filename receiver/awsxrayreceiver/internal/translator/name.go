@@ -19,7 +19,7 @@ import (
 
 	"go.opentelemetry.io/collector/pdata/ptrace"
 
-	awsxray "github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/xray"
+	awsxray "github.com/open-telemetry/opentelemetry-collector-contrib/external/aws/xray"
 )
 
 const (

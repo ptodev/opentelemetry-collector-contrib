@@ -31,8 +31,8 @@ import (
 	"go.opentelemetry.io/collector/consumer/consumertest"
 	"go.opentelemetry.io/collector/featuregate"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/scrapertest"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/scrapertest/golden"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/scrapertest"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/scrapertest/golden"
 )
 
 type configFunc func(hostname string) *Config

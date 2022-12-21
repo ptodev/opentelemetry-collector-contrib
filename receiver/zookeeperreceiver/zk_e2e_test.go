@@ -28,7 +28,7 @@ import (
 	"go.opentelemetry.io/collector/component/componenttest"
 	"go.opentelemetry.io/collector/consumer/consumertest"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/containertest"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/containertest"
 )
 
 type testHost struct {

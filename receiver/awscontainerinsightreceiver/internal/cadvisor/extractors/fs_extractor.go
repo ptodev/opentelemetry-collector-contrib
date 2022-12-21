@@ -20,7 +20,7 @@ import (
 	cinfo "github.com/google/cadvisor/info/v1"
 	"go.uber.org/zap"
 
-	ci "github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/containerinsight"
+	ci "github.com/open-telemetry/opentelemetry-collector-contrib/external/aws/containerinsight"
 )
 
 var allowedPaths = regexp.MustCompile(`^(tmpfs|\/dev\/.*|overlay)$`)

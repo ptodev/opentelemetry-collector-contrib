@@ -21,7 +21,7 @@ import (
 	"go.opentelemetry.io/collector/pdata/pmetric"
 	"go.uber.org/zap"
 
-	aws "github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/metrics"
+	aws "github.com/open-telemetry/opentelemetry-collector-contrib/external/aws/metrics"
 )
 
 var deltaMetricCalculator = aws.NewFloat64DeltaCalculator()

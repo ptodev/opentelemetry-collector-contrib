@@ -23,10 +23,10 @@ import (
 	"go.opentelemetry.io/collector/consumer"
 	"go.opentelemetry.io/collector/processor/processorhelper"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/attraction"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/processor/filterlog"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/processor/filtermetric"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/processor/filterspan"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/coreinternal/attraction"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/coreinternal/processor/filterlog"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/coreinternal/processor/filtermetric"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/coreinternal/processor/filterspan"
 )
 
 const (

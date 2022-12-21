@@ -21,8 +21,8 @@ import (
 	conventions "go.opentelemetry.io/collector/semconv/v1.6.1"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/ecsutil"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/common/docker"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/aws/ecsutil"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/common/docker"
 )
 
 func containerResource(cm ecsutil.ContainerMetadata, logger *zap.Logger) pcommon.Resource {

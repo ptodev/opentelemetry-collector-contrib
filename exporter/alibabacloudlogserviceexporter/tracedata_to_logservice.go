@@ -23,7 +23,7 @@ import (
 	"github.com/gogo/protobuf/proto"
 	"go.opentelemetry.io/collector/pdata/ptrace"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/tracetranslator"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/coreinternal/tracetranslator"
 )
 
 const (

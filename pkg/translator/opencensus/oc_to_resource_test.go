@@ -25,7 +25,7 @@ import (
 	"go.opentelemetry.io/collector/pdata/pcommon"
 	"google.golang.org/protobuf/proto"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/occonventions"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/coreinternal/occonventions"
 )
 
 func TestOcNodeResourceToInternal(t *testing.T) {

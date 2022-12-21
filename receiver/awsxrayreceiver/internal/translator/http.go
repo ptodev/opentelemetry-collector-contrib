@@ -18,8 +18,8 @@ import (
 	"go.opentelemetry.io/collector/pdata/ptrace"
 	conventions "go.opentelemetry.io/collector/semconv/v1.6.1"
 
-	awsxray "github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/xray"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/tracetranslator"
+	awsxray "github.com/open-telemetry/opentelemetry-collector-contrib/external/aws/xray"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/coreinternal/tracetranslator"
 )
 
 func addHTTP(seg *awsxray.Segment, span ptrace.Span) {

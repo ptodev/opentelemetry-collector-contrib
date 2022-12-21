@@ -40,8 +40,8 @@ import (
 	"go.opentelemetry.io/collector/pdata/plog"
 
 	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/splunkhecexporter"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/common/testutil"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/splunk"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/common/testutil"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/splunk"
 )
 
 func Test_splunkhecreceiver_NewLogsReceiver(t *testing.T) {

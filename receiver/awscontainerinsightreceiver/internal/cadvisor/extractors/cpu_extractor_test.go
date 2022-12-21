@@ -17,7 +17,7 @@ package extractors
 import (
 	"testing"
 
-	. "github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/containerinsight"
+	. "github.com/open-telemetry/opentelemetry-collector-contrib/external/aws/containerinsight"
 	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/awscontainerinsightreceiver/internal/cadvisor/testutils"
 )
 

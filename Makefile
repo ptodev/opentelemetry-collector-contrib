@@ -17,7 +17,7 @@ FOR_GROUP_TARGET=for-$(GROUP)-target
 FIND_MOD_ARGS=-type f -name "go.mod"
 TO_MOD_DIR=dirname {} \; | sort | egrep  '^./'
 EX_COMPONENTS=-not -path "./receiver/*" -not -path "./processor/*" -not -path "./exporter/*" -not -path "./extension/*"
-EX_INTERNAL=-not -path "./internal/*"
+EX_INTERNAL=-not -path "./external/*"
 
 # NONROOT_MODS includes ./* dirs (excludes . dir)
 NONROOT_MODS := $(shell find . $(FIND_MOD_ARGS) -exec $(TO_MOD_DIR) )

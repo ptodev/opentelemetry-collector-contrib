@@ -18,7 +18,7 @@ import (
 	"go.opentelemetry.io/collector/config"
 	k8s "k8s.io/client-go/kubernetes"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/k8sconfig"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/k8sconfig"
 )
 
 // Config defines configuration for kubernetes events receiver.

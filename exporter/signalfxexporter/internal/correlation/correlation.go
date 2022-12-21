@@ -26,8 +26,8 @@ import (
 	"go.opentelemetry.io/collector/pdata/ptrace"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/timeutils"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/splunk"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/coreinternal/timeutils"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/splunk"
 )
 
 // Tracker correlation

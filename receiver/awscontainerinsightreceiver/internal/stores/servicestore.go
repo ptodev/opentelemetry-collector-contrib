@@ -21,8 +21,8 @@ import (
 
 	"go.uber.org/zap"
 
-	ci "github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/containerinsight"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/k8s/k8sclient"
+	ci "github.com/open-telemetry/opentelemetry-collector-contrib/external/aws/containerinsight"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/aws/k8s/k8sclient"
 )
 
 const (

@@ -15,7 +15,7 @@
 package kubelet // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/kubeletstatsreceiver/internal/kubelet"
 
 import (
-	kube "github.com/open-telemetry/opentelemetry-collector-contrib/internal/kubelet"
+	kube "github.com/open-telemetry/opentelemetry-collector-contrib/external/kubelet"
 )
 
 // RestClient is swappable for testing.

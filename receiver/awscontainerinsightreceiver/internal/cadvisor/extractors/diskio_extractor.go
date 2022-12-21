@@ -22,8 +22,8 @@ import (
 	cInfo "github.com/google/cadvisor/info/v1"
 	"go.uber.org/zap"
 
-	ci "github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/containerinsight"
-	awsmetrics "github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/metrics"
+	ci "github.com/open-telemetry/opentelemetry-collector-contrib/external/aws/containerinsight"
+	awsmetrics "github.com/open-telemetry/opentelemetry-collector-contrib/external/aws/metrics"
 )
 
 type DiskIOMetricExtractor struct {
