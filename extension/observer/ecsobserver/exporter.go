@@ -21,7 +21,7 @@ import (
 	"go.uber.org/multierr"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/extension/observer/ecsobserver/internal/errctx"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/extension/observer/ecsobserver/external/errctx"
 )
 
 const (

@@ -34,8 +34,8 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/opencensusreceiver/internal/ocmetrics"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/opencensusreceiver/internal/octrace"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/opencensusreceiver/external/ocmetrics"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/opencensusreceiver/external/octrace"
 )
 
 // ocReceiver is the type that exposes Trace and Metrics reception.

@@ -27,7 +27,7 @@ import (
 	"go.opentelemetry.io/collector/receiver/scrapererror"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/vcenterreceiver/internal/metadata"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/vcenterreceiver/external/metadata"
 )
 
 var _ component.Receiver = (*vcenterMetricScraper)(nil)

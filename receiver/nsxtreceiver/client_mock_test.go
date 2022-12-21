@@ -19,7 +19,7 @@ import (
 
 	mock "github.com/stretchr/testify/mock"
 
-	model "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/nsxtreceiver/internal/model"
+	model "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/nsxtreceiver/external/model"
 )
 
 const (

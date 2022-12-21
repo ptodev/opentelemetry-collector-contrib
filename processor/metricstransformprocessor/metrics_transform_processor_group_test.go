@@ -28,8 +28,8 @@ import (
 	"go.opentelemetry.io/collector/processor/processorhelper"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/scrapertest"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/scrapertest/golden"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/scrapertest"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/scrapertest/golden"
 )
 
 type metricsGroupingTest struct {

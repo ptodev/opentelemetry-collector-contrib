@@ -27,7 +27,7 @@ import (
 	"go.opentelemetry.io/collector/receiver/scraperhelper"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/redisreceiver/internal/metadata"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/redisreceiver/external/metadata"
 )
 
 // Runs intermittently, fetching info from Redis, creating metrics/datapoints,

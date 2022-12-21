@@ -23,9 +23,9 @@ import (
 	"go.opentelemetry.io/collector/consumer"
 	"go.opentelemetry.io/collector/processor/processorhelper"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/transformprocessor/internal/logs"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/transformprocessor/internal/metrics"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/transformprocessor/internal/traces"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/transformprocessor/external/logs"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/transformprocessor/external/metrics"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/transformprocessor/external/traces"
 )
 
 const (

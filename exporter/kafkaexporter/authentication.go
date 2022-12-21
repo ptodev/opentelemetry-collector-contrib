@@ -22,7 +22,7 @@ import (
 	"github.com/Shopify/sarama"
 	"go.opentelemetry.io/collector/config/configtls"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/kafkaexporter/internal/awsmsk"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/kafkaexporter/external/awsmsk"
 )
 
 // Authentication defines authentication.

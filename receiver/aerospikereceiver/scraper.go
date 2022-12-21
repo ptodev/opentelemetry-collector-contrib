@@ -30,7 +30,7 @@ import (
 	"go.opentelemetry.io/collector/receiver/scrapererror"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/aerospikereceiver/internal/metadata"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/aerospikereceiver/external/metadata"
 )
 
 // aerospikeReceiver is a metrics receiver using the Aerospike interface to collect

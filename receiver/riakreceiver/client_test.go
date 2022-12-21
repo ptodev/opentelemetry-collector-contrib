@@ -30,7 +30,7 @@ import (
 	"go.opentelemetry.io/collector/config/configtls"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/riakreceiver/internal/model"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/riakreceiver/external/model"
 )
 
 const (

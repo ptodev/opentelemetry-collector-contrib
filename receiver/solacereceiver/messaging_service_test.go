@@ -36,7 +36,7 @@ const (
 	testQueueName    = "q"
 	testReceiverName = "rx"
 
-	// the majority of the amqp responses can be generated with github.com/Azure/go-amqp/internal/mocks or by wirecapturing amqp requests/responses
+	// the majority of the amqp responses can be generated with github.com/Azure/go-amqp/external/mocks or by wirecapturing amqp requests/responses
 
 	// Hard coded protocol header indicating AMQP protocol id 0 version 1.0.0
 	amqpProtocolHeaderResponse = "AMQP\x00\x01\x00\x00"

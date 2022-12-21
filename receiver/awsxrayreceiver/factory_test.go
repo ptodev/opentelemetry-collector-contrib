@@ -26,7 +26,7 @@ import (
 	"go.opentelemetry.io/collector/config/configtest"
 	"go.opentelemetry.io/collector/consumer/consumertest"
 
-	awsxray "github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/xray"
+	awsxray "github.com/open-telemetry/opentelemetry-collector-contrib/external/aws/xray"
 )
 
 func TestCreateDefaultConfig(t *testing.T) {

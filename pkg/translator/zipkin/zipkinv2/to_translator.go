@@ -30,10 +30,10 @@ import (
 	"go.opentelemetry.io/collector/pdata/ptrace"
 	conventions "go.opentelemetry.io/collector/semconv/v1.6.1"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/idutils"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/occonventions"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/tracetranslator"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/zipkin/internal/zipkin"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/coreinternal/idutils"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/coreinternal/occonventions"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/coreinternal/tracetranslator"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/zipkin/external/zipkin"
 )
 
 // ToTranslator converts from Zipkin data model to pdata.

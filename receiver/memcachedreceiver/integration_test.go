@@ -28,8 +28,8 @@ import (
 	"go.opentelemetry.io/collector/consumer/consumertest"
 	"go.opentelemetry.io/collector/pdata/pmetric"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/containertest"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/scrapertest"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/containertest"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/scrapertest"
 )
 
 func TestIntegration(t *testing.T) {

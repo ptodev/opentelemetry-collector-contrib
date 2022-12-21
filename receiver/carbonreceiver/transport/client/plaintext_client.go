@@ -26,7 +26,7 @@ import (
 // Graphite is a struct that defines the relevant properties of a graphite
 // connection.
 // This code was initially taken from
-// https://github.com/census-ecosystem/opencensus-go-exporter-graphite/tree/master/internal/client
+// https://github.com/census-ecosystem/opencensus-go-exporter-graphite/tree/master/external/client
 // and modified for the needs of testing the Carbon receiver package and is not
 // intended/tested to be used in production.
 type Graphite struct {
@@ -48,7 +48,7 @@ const defaultTimeout = 5
 
 // NewGraphite is a method that's used to create a new Graphite instance.
 // This code was initially taken from
-// https://github.com/census-ecosystem/opencensus-go-exporter-graphite/tree/master/internal/client
+// https://github.com/census-ecosystem/opencensus-go-exporter-graphite/tree/master/external/client
 // and modified for the needs of testing the Carbon receiver package and is not
 // intended/tested to be used in production.
 func NewGraphite(transport Transport, endpoint string) (*Graphite, error) {

@@ -24,7 +24,7 @@ import (
 	"go.opentelemetry.io/collector/component"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/rabbitmqreceiver/internal/models"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/rabbitmqreceiver/external/models"
 )
 
 // queuePath is the path to queues endpoint

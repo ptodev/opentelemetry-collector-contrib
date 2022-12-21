@@ -27,8 +27,8 @@ import (
 	"go.uber.org/zap"
 
 	"github.com/open-telemetry/opentelemetry-collector-contrib/extension/observer"
-	dcommon "github.com/open-telemetry/opentelemetry-collector-contrib/internal/common/docker"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/docker"
+	dcommon "github.com/open-telemetry/opentelemetry-collector-contrib/external/common/docker"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/docker"
 )
 
 const (

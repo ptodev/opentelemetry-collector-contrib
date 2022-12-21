@@ -16,7 +16,7 @@
 package main
 
 import (
-	"github.com/open-telemetry/opentelemetry-collector-contrib/cmd/telemetrygen/internal/telemetrygen"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/cmd/telemetrygen/external/telemetrygen"
 )
 
 func main() {
