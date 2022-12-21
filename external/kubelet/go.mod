@@ -1,10 +1,10 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/internal/kubelet
+module github.com/open-telemetry/opentelemetry-collector-contrib/external/kubelet
 
 go 1.18
 
 require (
-	github.com/open-telemetry/opentelemetry-collector-contrib/internal/common v0.63.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/internal/k8sconfig v0.63.0
+	github.com/open-telemetry/opentelemetry-collector-contrib/external/common v0.63.0
+	github.com/open-telemetry/opentelemetry-collector-contrib/external/k8sconfig v0.63.0
 	github.com/stretchr/testify v1.8.1
 	go.opentelemetry.io/collector v0.63.0
 	go.uber.org/zap v1.23.0
@@ -59,6 +59,6 @@ require (
 	sigs.k8s.io/yaml v1.2.0 // indirect
 )
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/common => ../../internal/common
+replace github.com/open-telemetry/opentelemetry-collector-contrib/external/common => ../../internal/common
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/k8sconfig => ../../internal/k8sconfig
+replace github.com/open-telemetry/opentelemetry-collector-contrib/external/k8sconfig => ../../internal/k8sconfig

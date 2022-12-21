@@ -1,9 +1,9 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/ecsutil
+module github.com/open-telemetry/opentelemetry-collector-contrib/external/aws/ecsutil
 
 go 1.18
 
 require (
-	github.com/open-telemetry/opentelemetry-collector-contrib/internal/common v0.63.0
+	github.com/open-telemetry/opentelemetry-collector-contrib/external/common v0.63.0
 	github.com/stretchr/testify v1.8.1
 	go.opentelemetry.io/collector v0.63.0
 	go.uber.org/zap v1.23.0
@@ -48,4 +48,4 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/common => ../../../internal/common
+replace github.com/open-telemetry/opentelemetry-collector-contrib/external/common => ../../../internal/common

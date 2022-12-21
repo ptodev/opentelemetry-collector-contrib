@@ -1,4 +1,4 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/containerinsight
+module github.com/open-telemetry/opentelemetry-collector-contrib/external/aws/containerinsight
 
 go 1.18
 

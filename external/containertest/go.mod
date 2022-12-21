@@ -1,4 +1,4 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/internal/containertest
+module github.com/open-telemetry/opentelemetry-collector-contrib/external/containertest
 
 go 1.18
 

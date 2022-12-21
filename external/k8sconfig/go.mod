@@ -1,4 +1,4 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/internal/k8sconfig
+module github.com/open-telemetry/opentelemetry-collector-contrib/external/k8sconfig
 
 go 1.18
 
