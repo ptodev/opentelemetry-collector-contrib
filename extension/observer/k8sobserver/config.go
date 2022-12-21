@@ -17,7 +17,7 @@ package k8sobserver // import "github.com/open-telemetry/opentelemetry-collector
 import (
 	"fmt"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/k8sconfig"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/k8sconfig"
 )
 
 // Config defines configuration for k8s attributes processor.

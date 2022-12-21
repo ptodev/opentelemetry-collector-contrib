@@ -288,7 +288,7 @@ func (m *mockIngester) Stop() {
 	m.stop = true
 }
 
-// TODO(gbbr): this is copied from exporter/datadogexporter/internal/testutil.
+// TODO(gbbr): this is copied from exporter/datadogexporter/external/testutil.
 // We should find a way to have a shared set of test utilities in either the processor
 // or the exporter.
 var testStatsPayload = pb.StatsPayload{

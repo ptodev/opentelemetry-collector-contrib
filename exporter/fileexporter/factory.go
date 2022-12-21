@@ -24,7 +24,7 @@ import (
 	"go.opentelemetry.io/collector/exporter/exporterhelper"
 	"gopkg.in/natefinch/lumberjack.v2"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/sharedcomponent"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/sharedcomponent"
 )
 
 const (

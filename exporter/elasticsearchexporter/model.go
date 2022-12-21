@@ -22,8 +22,8 @@ import (
 	"go.opentelemetry.io/collector/pdata/plog"
 	"go.opentelemetry.io/collector/pdata/ptrace"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/elasticsearchexporter/internal/objmodel"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/traceutil"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/elasticsearchexporter/external/objmodel"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/coreinternal/traceutil"
 )
 
 type mappingModel interface {

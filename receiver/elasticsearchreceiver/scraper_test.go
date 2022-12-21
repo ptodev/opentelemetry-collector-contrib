@@ -29,10 +29,10 @@ import (
 	"go.opentelemetry.io/collector/receiver/receivertest"
 	"go.opentelemetry.io/collector/receiver/scrapererror"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/comparetest"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/comparetest/golden"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/elasticsearchreceiver/internal/mocks"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/elasticsearchreceiver/internal/model"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/comparetest"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/comparetest/golden"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/elasticsearchreceiver/external/mocks"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/elasticsearchreceiver/external/model"
 )
 
 const fullExpectedMetricsPath = "./testdata/expected_metrics/full.json"

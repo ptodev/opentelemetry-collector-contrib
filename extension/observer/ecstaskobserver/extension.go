@@ -24,8 +24,8 @@ import (
 	"go.uber.org/zap"
 
 	"github.com/open-telemetry/opentelemetry-collector-contrib/extension/observer"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/ecsutil"
-	dcommon "github.com/open-telemetry/opentelemetry-collector-contrib/internal/common/docker"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/aws/ecsutil"
+	dcommon "github.com/open-telemetry/opentelemetry-collector-contrib/external/common/docker"
 )
 
 const runningStatus = "RUNNING"

@@ -23,7 +23,7 @@ import (
 	"go.opentelemetry.io/collector/receiver"
 	conventions "go.opentelemetry.io/collector/semconv/v1.6.1"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/splunk"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/splunk"
 )
 
 // This file implements factory for Splunk HEC receiver.

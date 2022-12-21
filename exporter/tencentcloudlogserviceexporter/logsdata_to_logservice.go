@@ -25,7 +25,7 @@ import (
 	"google.golang.org/protobuf/proto"
 
 	cls "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/tencentcloudlogserviceexporter/proto"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/traceutil"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/coreinternal/traceutil"
 )
 
 const (

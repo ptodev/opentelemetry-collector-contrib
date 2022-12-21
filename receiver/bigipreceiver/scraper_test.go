@@ -31,10 +31,10 @@ import (
 	"go.opentelemetry.io/collector/receiver/scrapererror"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/comparetest"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/comparetest/golden"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/bigipreceiver/internal/mocks"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/bigipreceiver/internal/models"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/comparetest"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/comparetest/golden"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/bigipreceiver/external/mocks"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/bigipreceiver/external/models"
 )
 
 func TestScraperStart(t *testing.T) {

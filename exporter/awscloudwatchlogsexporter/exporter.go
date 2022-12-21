@@ -32,8 +32,8 @@ import (
 	"go.opentelemetry.io/collector/pdata/plog"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/awsutil"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/cwlogs"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/aws/awsutil"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/aws/cwlogs"
 )
 
 type exporter struct {

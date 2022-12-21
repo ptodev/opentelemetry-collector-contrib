@@ -23,7 +23,7 @@ import (
 	"go.opentelemetry.io/collector/extension"
 
 	"github.com/open-telemetry/opentelemetry-collector-contrib/extension/observer"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/ecsutil"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/aws/ecsutil"
 )
 
 const (

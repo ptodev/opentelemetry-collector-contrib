@@ -36,7 +36,7 @@ import (
 	conventions "go.opentelemetry.io/collector/semconv/v1.9.0"
 	"go.uber.org/atomic"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/common/testutil"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/common/testutil"
 )
 
 func TestNew(t *testing.T) {

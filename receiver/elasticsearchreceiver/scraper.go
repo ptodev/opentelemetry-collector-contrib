@@ -28,8 +28,8 @@ import (
 	"go.opentelemetry.io/collector/receiver"
 	"go.opentelemetry.io/collector/receiver/scrapererror"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/elasticsearchreceiver/internal/metadata"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/elasticsearchreceiver/internal/model"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/elasticsearchreceiver/external/metadata"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/elasticsearchreceiver/external/model"
 )
 
 var (

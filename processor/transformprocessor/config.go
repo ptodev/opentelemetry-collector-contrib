@@ -23,10 +23,10 @@ import (
 	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/ottl/contexts/ottldatapoint"
 	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/ottl/contexts/ottllog"
 	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/ottl/contexts/ottlspan"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/transformprocessor/internal/common"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/transformprocessor/internal/logs"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/transformprocessor/internal/metrics"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/transformprocessor/internal/traces"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/transformprocessor/external/common"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/transformprocessor/external/logs"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/transformprocessor/external/metrics"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/transformprocessor/external/traces"
 )
 
 type Config struct {

@@ -39,9 +39,9 @@ import (
 	"go.uber.org/zap/zapcore"
 	"go.uber.org/zap/zaptest/observer"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/proxy"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/common/testutil"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/awsxrayreceiver/internal/udppoller"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/aws/proxy"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/common/testutil"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/awsxrayreceiver/external/udppoller"
 )
 
 const (
@@ -132,7 +132,7 @@ func TestSegmentsPassedToConsumer(t *testing.T) {
 		assert.NoError(t, rcvr.Shutdown(context.Background()))
 	}()
 
-	content, err := os.ReadFile(filepath.Join("../../internal/aws/xray", "testdata", "ddbSample.txt"))
+	content, err := os.ReadFile(filepath.Join("../../external/aws/xray", "testdata", "ddbSample.txt"))
 	assert.NoError(t, err, "can not read raw segment")
 
 	err = writePacket(t, addr, segmentHeader+string(content))
@@ -190,7 +190,7 @@ func TestSegmentsConsumerErrorsOut(t *testing.T) {
 		assert.NoError(t, rcvr.Shutdown(context.Background()))
 	}()
 
-	content, err := os.ReadFile(filepath.Join("../../internal/aws/xray", "testdata", "serverSample.txt"))
+	content, err := os.ReadFile(filepath.Join("../../external/aws/xray", "testdata", "serverSample.txt"))
 	assert.NoError(t, err, "can not read raw segment")
 
 	err = writePacket(t, addr, segmentHeader+string(content))

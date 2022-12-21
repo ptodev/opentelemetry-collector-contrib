@@ -17,7 +17,7 @@ package iisreceiver // import "github.com/open-telemetry/opentelemetry-collector
 import (
 	"go.opentelemetry.io/collector/receiver/scraperhelper"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/iisreceiver/internal/metadata"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/iisreceiver/external/metadata"
 )
 
 // Config defines configuration for simple prometheus receiver.

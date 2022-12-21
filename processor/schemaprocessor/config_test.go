@@ -24,7 +24,7 @@ import (
 	"go.opentelemetry.io/collector/config/confighttp"
 	"go.opentelemetry.io/collector/confmap/confmaptest"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/schemaprocessor/internal/translation"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/schemaprocessor/external/translation"
 )
 
 func TestLoadConfig(t *testing.T) {

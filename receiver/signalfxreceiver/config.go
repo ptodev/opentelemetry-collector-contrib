@@ -17,7 +17,7 @@ package signalfxreceiver // import "github.com/open-telemetry/opentelemetry-coll
 import (
 	"go.opentelemetry.io/collector/config/confighttp"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/splunk"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/splunk"
 )
 
 // Config defines configuration for the SignalFx receiver.

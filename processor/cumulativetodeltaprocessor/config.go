@@ -20,7 +20,7 @@ import (
 
 	"go.opentelemetry.io/collector/component"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter/filterset"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/filter/filterset"
 )
 
 // Config defines the configuration for the processor.

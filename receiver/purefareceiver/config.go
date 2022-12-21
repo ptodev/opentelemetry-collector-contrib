@@ -20,7 +20,7 @@ import (
 	"go.opentelemetry.io/collector/component"
 	"go.opentelemetry.io/collector/config/confighttp"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/purefareceiver/internal"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/purefareceiver/external"
 )
 
 var _ component.Config = (*Config)(nil)

@@ -29,8 +29,8 @@ import (
 	"go.opentelemetry.io/collector/receiver/scrapererror"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/comparetest"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/comparetest/golden"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/comparetest"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/comparetest/golden"
 )
 
 type MockClient struct {

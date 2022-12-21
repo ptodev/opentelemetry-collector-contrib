@@ -25,10 +25,10 @@ import (
 	"go.opentelemetry.io/collector/processor"
 	"go.opentelemetry.io/collector/processor/processortest"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/attraction"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/testdata"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter/filterconfig"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter/filterset"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/coreinternal/attraction"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/coreinternal/testdata"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/filter/filterconfig"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/filter/filterset"
 )
 
 // Common structure for all the Tests

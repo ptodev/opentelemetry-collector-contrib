@@ -23,7 +23,7 @@ import (
 	"go.opentelemetry.io/collector/extension/auth"
 	"google.golang.org/grpc/credentials"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/extension/headerssetterextension/internal/source"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/extension/headerssetterextension/external/source"
 )
 
 type Header struct {

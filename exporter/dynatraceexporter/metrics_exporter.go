@@ -33,8 +33,8 @@ import (
 	"go.uber.org/zap"
 
 	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/dynatraceexporter/config"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/dynatraceexporter/internal/serialization"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/common/ttlmap"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/dynatraceexporter/external/serialization"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/common/ttlmap"
 )
 
 const (

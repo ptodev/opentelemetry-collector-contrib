@@ -24,7 +24,7 @@ import (
 	"go.opentelemetry.io/collector/component"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/riakreceiver/internal/model"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/riakreceiver/external/model"
 )
 
 // statsPath is the path to stats endpoint

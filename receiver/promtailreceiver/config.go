@@ -30,7 +30,7 @@ import (
 	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/adapter"
 	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/operator"
 	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/operator/helper"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/promtailreceiver/internal"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/promtailreceiver/external"
 )
 
 // PromtailConfig defines configuration for the promtail receiver

@@ -17,7 +17,7 @@ package spanprocessor // import "github.com/open-telemetry/opentelemetry-collect
 import (
 	"go.opentelemetry.io/collector/component"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter/filterconfig"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/filter/filterconfig"
 )
 
 // Config is the configuration for the span processor.

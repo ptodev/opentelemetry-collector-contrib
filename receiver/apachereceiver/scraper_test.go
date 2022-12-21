@@ -31,9 +31,9 @@ import (
 	"go.opentelemetry.io/collector/config/configtls"
 	"go.opentelemetry.io/collector/receiver/receivertest"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/comparetest"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/comparetest/golden"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/apachereceiver/internal/metadata"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/comparetest"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/comparetest/golden"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/apachereceiver/external/metadata"
 )
 
 func TestScraper(t *testing.T) {

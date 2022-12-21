@@ -19,7 +19,7 @@ import (
 
 	"go.opentelemetry.io/collector/component"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/attraction"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/coreinternal/attraction"
 )
 
 // Config defines configuration for Resource processor.

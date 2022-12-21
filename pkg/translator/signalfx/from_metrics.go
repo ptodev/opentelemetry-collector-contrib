@@ -296,7 +296,7 @@ func float64ToDimValue(f float64) string {
 	// Parameters below are the same used by Prometheus
 	// see https://github.com/prometheus/common/blob/b5fe7d854c42dc7842e48d1ca58f60feae09d77b/expfmt/text_create.go#L450
 	// SignalFx agent uses a different pattern
-	// https://github.com/signalfx/signalfx-agent/blob/5779a3de0c9861fa07316fd11b3c4ff38c0d78f0/internal/monitors/prometheusexporter/conversion.go#L77
+	// https://github.com/signalfx/signalfx-agent/blob/5779a3de0c9861fa07316fd11b3c4ff38c0d78f0/external/monitors/prometheusexporter/conversion.go#L77
 	// The important issue here is consistency with the exporter, opting for the more common one used by Prometheus.
 	switch {
 	case f == 0:

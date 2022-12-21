@@ -22,8 +22,8 @@ import (
 	"github.com/stretchr/testify/require"
 	"go.opentelemetry.io/collector/pdata/pmetric"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/goldendataset"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/metricstestutil"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/coreinternal/goldendataset"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/coreinternal/metricstestutil"
 	"github.com/open-telemetry/opentelemetry-collector-contrib/testbed/correctnesstests"
 	"github.com/open-telemetry/opentelemetry-collector-contrib/testbed/testbed"
 )
@@ -92,7 +92,7 @@ func testWithMetricsGoldenDataset(
 }
 
 func getTestMetrics(t *testing.T) []pmetric.Metrics {
-	const file = "../../../internal/coreinternal/goldendataset/testdata/generated_pict_pairs_metrics.txt"
+	const file = "../../../external/coreinternal/goldendataset/testdata/generated_pict_pairs_metrics.txt"
 	mds, err := goldendataset.GenerateMetrics(file)
 	require.NoError(t, err)
 	return mds

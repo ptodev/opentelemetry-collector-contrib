@@ -22,7 +22,7 @@ import (
 	"go.uber.org/atomic"
 )
 
-const metricsPictPairsFile = "../../internal/goldendataset/testdata/generated_pict_pairs_metrics.txt"
+const metricsPictPairsFile = "../../external/goldendataset/testdata/generated_pict_pairs_metrics.txt"
 
 func TestGoldenDataProvider(t *testing.T) {
 	dp := NewGoldenDataProvider("", "", metricsPictPairsFile)

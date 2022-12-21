@@ -25,7 +25,7 @@ import (
 	"go.opentelemetry.io/collector/config/configtls"
 	"go.opentelemetry.io/collector/confmap/confmaptest"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/proxy"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/aws/proxy"
 )
 
 func TestLoadConfig(t *testing.T) {

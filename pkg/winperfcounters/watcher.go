@@ -21,7 +21,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/winperfcounters/internal/third_party/telegraf/win_perf_counters"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/winperfcounters/external/third_party/telegraf/win_perf_counters"
 )
 
 const totalInstanceName = "_Total"

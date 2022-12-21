@@ -20,7 +20,7 @@ import (
 
 	"go.opentelemetry.io/collector/config/confighttp"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/schemaprocessor/internal/translation"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/schemaprocessor/external/translation"
 )
 
 var (

@@ -20,7 +20,7 @@ package sqlserverreceiver // import "github.com/open-telemetry/opentelemetry-col
 import (
 	"go.opentelemetry.io/collector/pdata/pcommon"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/sqlserverreceiver/internal/metadata"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/sqlserverreceiver/external/metadata"
 )
 
 type recordFunc = func(*metadata.MetricsBuilder, pcommon.Timestamp, float64)

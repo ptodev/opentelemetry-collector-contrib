@@ -24,15 +24,15 @@ import (
 	"go.uber.org/multierr"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter/expr"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter/filterconfig"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter/filtermatcher"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter/filtermetric"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter/filterset"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/filter/expr"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/filter/filterconfig"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/filter/filtermatcher"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/filter/filtermetric"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/filter/filterset"
 	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/ottl/contexts/ottldatapoint"
 	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/ottl/contexts/ottlmetric"
 	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/ottl/contexts/ottlresource"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/filterprocessor/internal/common"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/filterprocessor/external/common"
 )
 
 type filterMetricProcessor struct {

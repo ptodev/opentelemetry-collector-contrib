@@ -27,7 +27,7 @@ import (
 	"go.opentelemetry.io/collector/exporter/exporterhelper"
 	"go.uber.org/multierr"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/datadogexporter/internal/metadata/valid"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/datadogexporter/external/metadata/valid"
 )
 
 var (

@@ -17,7 +17,7 @@ package activedirectorydsreceiver // import "github.com/open-telemetry/opentelem
 import (
 	"go.opentelemetry.io/collector/receiver/scraperhelper"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/activedirectorydsreceiver/internal/metadata"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/activedirectorydsreceiver/external/metadata"
 )
 
 type Config struct {

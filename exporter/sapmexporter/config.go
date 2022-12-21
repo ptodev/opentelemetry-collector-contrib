@@ -22,7 +22,7 @@ import (
 	sapmclient "github.com/signalfx/sapm-proto/client"
 	"go.opentelemetry.io/collector/exporter/exporterhelper"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/splunk"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/splunk"
 )
 
 const (

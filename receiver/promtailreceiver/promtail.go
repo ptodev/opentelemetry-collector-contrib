@@ -26,7 +26,7 @@ import (
 	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/entry"
 	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/operator"
 	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/operator/helper"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/promtailreceiver/internal"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/promtailreceiver/external"
 )
 
 const (

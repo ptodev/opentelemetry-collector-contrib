@@ -25,8 +25,8 @@ import (
 	"go.opentelemetry.io/collector/receiver"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/rabbitmqreceiver/internal/metadata"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/rabbitmqreceiver/internal/models"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/rabbitmqreceiver/external/metadata"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/rabbitmqreceiver/external/models"
 )
 
 var errClientNotInit = errors.New("client not initialized")

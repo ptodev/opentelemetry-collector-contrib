@@ -23,7 +23,7 @@ import (
 	"go.opentelemetry.io/collector/receiver"
 
 	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/prometheusreceiver"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/purefareceiver/internal"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/purefareceiver/external"
 )
 
 var _ receiver.Metrics = (*purefaReceiver)(nil)

@@ -28,9 +28,9 @@ import (
 	"go.opentelemetry.io/collector/pdata/ptrace"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/instanaexporter/internal/backend"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/instanaexporter/internal/converter"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/instanaexporter/internal/converter/model"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/instanaexporter/external/backend"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/instanaexporter/external/converter"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/instanaexporter/external/converter/model"
 )
 
 type instanaExporter struct {

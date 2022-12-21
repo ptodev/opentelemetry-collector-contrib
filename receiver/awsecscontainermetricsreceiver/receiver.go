@@ -23,8 +23,8 @@ import (
 	"go.opentelemetry.io/collector/receiver"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/ecsutil"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/awsecscontainermetricsreceiver/internal/awsecscontainermetrics"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/aws/ecsutil"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/awsecscontainermetricsreceiver/external/awsecscontainermetrics"
 )
 
 var _ receiver.Metrics = (*awsEcsContainerMetricsReceiver)(nil)

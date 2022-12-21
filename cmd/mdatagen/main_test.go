@@ -22,7 +22,7 @@ import (
 	"github.com/stretchr/testify/require"
 	"go.opentelemetry.io/collector/receiver/receivertest"
 
-	md "github.com/open-telemetry/opentelemetry-collector-contrib/cmd/mdatagen/internal/metadata"
+	md "github.com/open-telemetry/opentelemetry-collector-contrib/cmd/mdatagen/external/metadata"
 )
 
 func Test_runContents(t *testing.T) {

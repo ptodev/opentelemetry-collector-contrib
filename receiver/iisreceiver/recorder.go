@@ -20,7 +20,7 @@ package iisreceiver // import "github.com/open-telemetry/opentelemetry-collector
 import (
 	"go.opentelemetry.io/collector/pdata/pcommon"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/iisreceiver/internal/metadata"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/iisreceiver/external/metadata"
 )
 
 type recordFunc = func(md *metadata.MetricsBuilder, ts pcommon.Timestamp, val float64)

@@ -31,9 +31,9 @@ import (
 	"go.opentelemetry.io/collector/pdata/ptrace"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/awskinesisexporter/internal/batch"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/awskinesisexporter/internal/compress"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/awskinesisexporter/internal/producer"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/awskinesisexporter/external/batch"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/awskinesisexporter/external/compress"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/awskinesisexporter/external/producer"
 )
 
 // Exporter implements an OpenTelemetry trace exporter that exports all spans to AWS Kinesis

@@ -28,7 +28,7 @@ import (
 	"go.opentelemetry.io/collector/extension/extensiontest"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/extension/observer/ecsobserver/internal/ecsmock"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/extension/observer/ecsobserver/external/ecsmock"
 )
 
 // inspectErrorHost implements component.Host.

@@ -17,7 +17,7 @@ package tailsamplingprocessor // import "github.com/open-telemetry/opentelemetry
 import (
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/tailsamplingprocessor/internal/sampling"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/tailsamplingprocessor/external/sampling"
 )
 
 func getNewAndPolicy(logger *zap.Logger, config *AndCfg) (sampling.PolicyEvaluator, error) {

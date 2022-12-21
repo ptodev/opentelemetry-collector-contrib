@@ -19,8 +19,8 @@ import (
 
 	"go.opentelemetry.io/collector/component"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/attraction"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter/filterconfig"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/coreinternal/attraction"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/filter/filterconfig"
 )
 
 // Config specifies the set of attributes to be inserted, updated, upserted and

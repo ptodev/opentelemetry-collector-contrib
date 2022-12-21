@@ -23,10 +23,10 @@ import (
 	"go.opentelemetry.io/collector/processor"
 	"go.opentelemetry.io/collector/processor/processorhelper"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/transformprocessor/internal/common"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/transformprocessor/internal/logs"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/transformprocessor/internal/metrics"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/transformprocessor/internal/traces"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/transformprocessor/external/common"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/transformprocessor/external/logs"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/transformprocessor/external/metrics"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/transformprocessor/external/traces"
 )
 
 const (

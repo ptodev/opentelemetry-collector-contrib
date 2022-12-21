@@ -25,7 +25,7 @@ import (
 	"go.opentelemetry.io/collector/extension"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/extension/jaegerremotesampling/internal"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/extension/jaegerremotesampling/external"
 )
 
 var _ extension.Extension = (*jrsExtension)(nil)

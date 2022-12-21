@@ -23,11 +23,11 @@ import (
 	"go.opentelemetry.io/collector/processor/processorhelper"
 	"go.uber.org/multierr"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter/expr"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter/filterconfig"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter/filterlog"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/filter/expr"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/filter/filterconfig"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/filter/filterlog"
 	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/ottl/contexts/ottllog"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/filterprocessor/internal/common"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/filterprocessor/external/common"
 )
 
 type filterLogProcessor struct {

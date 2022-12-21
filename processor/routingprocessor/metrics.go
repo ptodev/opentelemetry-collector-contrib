@@ -27,7 +27,7 @@ import (
 	"go.uber.org/zap"
 
 	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/ottl/contexts/ottldatapoint"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/routingprocessor/internal/common"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/routingprocessor/external/common"
 )
 
 var _ processor.Metrics = (*metricsProcessor)(nil)

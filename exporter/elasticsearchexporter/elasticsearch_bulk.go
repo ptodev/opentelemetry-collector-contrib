@@ -32,7 +32,7 @@ import (
 	esutil "github.com/elastic/go-elasticsearch/v8/esutil"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/common/sanitize"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/common/sanitize"
 )
 
 type esClientCurrent = elasticsearch.Client

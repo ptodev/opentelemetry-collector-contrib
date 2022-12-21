@@ -15,7 +15,7 @@
 package awsproxy // import "github.com/open-telemetry/opentelemetry-collector-contrib/extension/awsproxy"
 
 import (
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/proxy"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/aws/proxy"
 )
 
 // Config defines the configuration for an AWS X-Ray proxy.

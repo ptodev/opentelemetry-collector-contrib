@@ -34,7 +34,7 @@ import (
 	semconv "go.opentelemetry.io/collector/semconv/v1.6.1"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/servicegraphprocessor/internal/store"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/servicegraphprocessor/external/store"
 )
 
 const (

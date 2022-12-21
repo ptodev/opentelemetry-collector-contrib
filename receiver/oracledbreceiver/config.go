@@ -21,7 +21,7 @@ import (
 
 	"go.opentelemetry.io/collector/receiver/scraperhelper"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/oracledbreceiver/internal/metadata"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/oracledbreceiver/external/metadata"
 )
 
 type Config struct {

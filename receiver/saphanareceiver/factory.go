@@ -26,7 +26,7 @@ import (
 	"go.opentelemetry.io/collector/receiver"
 	"go.opentelemetry.io/collector/receiver/scraperhelper"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/saphanareceiver/internal/metadata"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/saphanareceiver/external/metadata"
 )
 
 const (

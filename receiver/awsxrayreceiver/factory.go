@@ -22,9 +22,9 @@ import (
 	"go.opentelemetry.io/collector/consumer"
 	"go.opentelemetry.io/collector/receiver"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/proxy"
-	awsxray "github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/xray"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/awsxrayreceiver/internal/udppoller"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/external/aws/proxy"
+	awsxray "github.com/open-telemetry/opentelemetry-collector-contrib/external/aws/xray"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/awsxrayreceiver/external/udppoller"
 )
 
 // NewFactory creates a factory for AWS receiver.

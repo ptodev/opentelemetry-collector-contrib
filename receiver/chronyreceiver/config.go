@@ -22,8 +22,8 @@ import (
 	"go.opentelemetry.io/collector/component"
 	"go.opentelemetry.io/collector/receiver/scraperhelper"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/chronyreceiver/internal/chrony"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/chronyreceiver/internal/metadata"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/chronyreceiver/external/chrony"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/chronyreceiver/external/metadata"
 )
 
 type Config struct {
