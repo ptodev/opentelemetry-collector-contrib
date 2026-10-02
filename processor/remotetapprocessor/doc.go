@@ -3,7 +3,8 @@
 
 //go:generate make mdatagen
 
-// Package remotetapprocessor can be positioned anywhere in a pipeline, allowing
-// data to pass through to the next component. Simultaneously, it makes a portion
-// of the data accessible to WebSocket clients connecting on a configurable port.
+// Package remotetapprocessor can be positioned anywhere in a pipeline. It passes
+// every batch on unchanged and, while a client is connected, copies a
+// configurable slice of the telemetry into local OTLP files that the client
+// pulls over gRPC.
 package remotetapprocessor // import "github.com/open-telemetry/opentelemetry-collector-contrib/processor/remotetapprocessor"

@@ -1,0 +1,325 @@
+resourceLogs:
+  - resource:
+      attributes:
+        - key: service.name
+          value:
+            stringValue: checkout
+        - key: service.version
+          value:
+            stringValue: 1.2.3
+        - key: k8s.namespace.name
+          value:
+            stringValue: shop
+        - key: k8s.pod.name
+          value:
+            stringValue: checkout-7d9f8c6b5-x2x9z
+        - key: tap.schema_url
+          value:
+            stringValue: https://opentelemetry.io/schemas/1.26.0
+        - key: tap.session_id
+          value:
+            stringValue: normalized
+        - key: tap.instance
+          value:
+            stringValue: normalized
+        - key: tap.processor
+          value:
+            stringValue: remotetap
+        - key: tap.resource_bytes
+          value:
+            intValue: "133"
+    schemaUrl: https://opentelemetry.io/schemas/1.26.0
+    scopeLogs:
+      - logRecords:
+          - attributes:
+              - key: http.route
+                value:
+                  stringValue: /api/pay
+              - key: user.id
+                value:
+                  stringValue: 542e60c9a53e4706
+              - key: tap.detail
+                value:
+                  stringValue: keys
+              - key: tap.rules
+                value:
+                  arrayValue:
+                    values:
+                      - intValue: "0"
+              - key: tap.attribute_count
+                value:
+                  intValue: "2"
+              - key: tap.log_bytes
+                value:
+                  intValue: "138"
+              - key: tap.body_bytes
+                value:
+                  intValue: "22"
+            body:
+              stringValue: payment 97156 declined
+            observedTimeUnixNano: "1767268800001000000"
+            severityNumber: 17
+            severityText: Error
+            spanId: 0fce6f5edbd029b8
+            timeUnixNano: "1767268800000000000"
+            traceId: 71fdd62fa0af37ac298be3ffcf666105
+          - attributes:
+              - key: http.route
+                value:
+                  stringValue: /cart/checkout
+              - key: user.id
+                value:
+                  stringValue: 251b2d8d942cf7d3
+              - key: tap.detail
+                value:
+                  stringValue: keys
+              - key: tap.rules
+                value:
+                  arrayValue:
+                    values:
+                      - intValue: "0"
+              - key: tap.attribute_count
+                value:
+                  intValue: "2"
+              - key: tap.log_bytes
+                value:
+                  intValue: "139"
+              - key: tap.body_bytes
+                value:
+                  intValue: "18"
+            body:
+              stringValue: order 85970 placed
+            observedTimeUnixNano: "1767268807001000000"
+            severityNumber: 13
+            severityText: Warn
+            spanId: 9a1983ffec0ac50d
+            timeUnixNano: "1767268807000000000"
+            traceId: 5feb021e53e29aca07cd3849eb646b53
+          - attributes:
+              - key: http.route
+                value:
+                  stringValue: /api/pay
+              - key: user.id
+                value:
+                  stringValue: 14ad94641cc82699
+              - key: tap.detail
+                value:
+                  stringValue: keys
+              - key: tap.rules
+                value:
+                  arrayValue:
+                    values:
+                      - intValue: "0"
+              - key: tap.attribute_count
+                value:
+                  intValue: "2"
+              - key: tap.log_bytes
+                value:
+                  intValue: "140"
+              - key: tap.body_bytes
+                value:
+                  intValue: "25"
+            body:
+              stringValue: cache miss for cart 26451
+            observedTimeUnixNano: "1767268814001000000"
+            severityNumber: 13
+            severityText: Warn
+            spanId: 56248a1f46cf42d8
+            timeUnixNano: "1767268814000000000"
+            traceId: 3cc2687ee323c46fbf66533ca193a648
+          - attributes:
+              - key: http.route
+                value:
+                  stringValue: /api/pay
+              - key: user.id
+                value:
+                  stringValue: c6c81dd6a27ff01a
+              - key: tap.detail
+                value:
+                  stringValue: keys
+              - key: tap.rules
+                value:
+                  arrayValue:
+                    values:
+                      - intValue: "0"
+              - key: tap.attribute_count
+                value:
+                  intValue: "2"
+              - key: tap.log_bytes
+                value:
+                  intValue: "133"
+              - key: tap.body_bytes
+                value:
+                  intValue: "18"
+            body:
+              stringValue: order 41644 placed
+            observedTimeUnixNano: "1767268821001000000"
+            severityNumber: 9
+            severityText: Info
+            spanId: 4e208cf0f29c44b7
+            timeUnixNano: "1767268821000000000"
+            traceId: 77c3a3b849067bb0c0c6e00dd52f7019
+        scope:
+          name: log/slog
+  - resource:
+      attributes:
+        - key: service.name
+          value:
+            stringValue: cart
+        - key: service.version
+          value:
+            stringValue: 1.2.3
+        - key: k8s.namespace.name
+          value:
+            stringValue: shop
+        - key: k8s.pod.name
+          value:
+            stringValue: cart-7d9f8c6b5-x2x9z
+        - key: tap.schema_url
+          value:
+            stringValue: https://opentelemetry.io/schemas/1.26.0
+        - key: tap.session_id
+          value:
+            stringValue: normalized
+        - key: tap.instance
+          value:
+            stringValue: normalized
+        - key: tap.processor
+          value:
+            stringValue: remotetap
+        - key: tap.resource_bytes
+          value:
+            intValue: "124"
+    schemaUrl: https://opentelemetry.io/schemas/1.26.0
+    scopeLogs:
+      - logRecords:
+          - attributes:
+              - key: http.route
+                value:
+                  stringValue: /api/pay
+              - key: user.id
+                value:
+                  stringValue: 6471f986ef96dd9e
+              - key: tap.detail
+                value:
+                  stringValue: keys
+              - key: tap.rules
+                value:
+                  arrayValue:
+                    values:
+                      - intValue: "0"
+              - key: tap.attribute_count
+                value:
+                  intValue: "2"
+              - key: tap.log_bytes
+                value:
+                  intValue: "137"
+              - key: tap.body_bytes
+                value:
+                  intValue: "22"
+            body:
+              stringValue: payment 22857 declined
+            observedTimeUnixNano: "1767268800001000000"
+            severityNumber: 13
+            severityText: Warn
+            spanId: 49b0cc97d994587d
+            timeUnixNano: "1767268800000000000"
+            traceId: 8ee6efc539bbe2bebb1ca6a53dd972c5
+          - attributes:
+              - key: http.route
+                value:
+                  stringValue: /product/{id}
+              - key: user.id
+                value:
+                  stringValue: 13ae267137aca05a
+              - key: tap.detail
+                value:
+                  stringValue: keys
+              - key: tap.rules
+                value:
+                  arrayValue:
+                    values:
+                      - intValue: "0"
+              - key: tap.attribute_count
+                value:
+                  intValue: "2"
+              - key: tap.log_bytes
+                value:
+                  intValue: "145"
+              - key: tap.body_bytes
+                value:
+                  intValue: "25"
+            body:
+              stringValue: cache miss for cart 50453
+            observedTimeUnixNano: "1767268807001000000"
+            severityNumber: 9
+            severityText: Info
+            spanId: 35590cf1e3d740df
+            timeUnixNano: "1767268807000000000"
+            traceId: f150f16d9b49398672865a101e91b1c0
+          - attributes:
+              - key: http.route
+                value:
+                  stringValue: /api/pay
+              - key: user.id
+                value:
+                  stringValue: dc6c4dad8d7bc910
+              - key: tap.detail
+                value:
+                  stringValue: keys
+              - key: tap.rules
+                value:
+                  arrayValue:
+                    values:
+                      - intValue: "0"
+              - key: tap.attribute_count
+                value:
+                  intValue: "2"
+              - key: tap.log_bytes
+                value:
+                  intValue: "138"
+              - key: tap.body_bytes
+                value:
+                  intValue: "22"
+            body:
+              stringValue: payment 81465 declined
+            observedTimeUnixNano: "1767268814001000000"
+            severityNumber: 17
+            severityText: Error
+            spanId: 1f4a71c51cc1733a
+            timeUnixNano: "1767268814000000000"
+            traceId: e25f2667be155e8b0963d5edb767ade2
+          - attributes:
+              - key: http.route
+                value:
+                  stringValue: /cart/checkout
+              - key: user.id
+                value:
+                  stringValue: eb9ceb07b414ea95
+              - key: tap.detail
+                value:
+                  stringValue: keys
+              - key: tap.rules
+                value:
+                  arrayValue:
+                    values:
+                      - intValue: "0"
+              - key: tap.attribute_count
+                value:
+                  intValue: "2"
+              - key: tap.log_bytes
+                value:
+                  intValue: "144"
+              - key: tap.body_bytes
+                value:
+                  intValue: "22"
+            body:
+              stringValue: payment 66776 declined
+            observedTimeUnixNano: "1767268821001000000"
+            severityNumber: 17
+            severityText: Error
+            spanId: 4911a8675eb1ed52
+            timeUnixNano: "1767268821000000000"
+            traceId: f068daab81f54428b8a52fa5103e33a0
+        scope:
+          name: log/slog

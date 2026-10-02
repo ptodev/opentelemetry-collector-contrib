@@ -1,0 +1,98 @@
+// Copyright The OpenTelemetry Authors
+// SPDX-License-Identifier: Apache-2.0
+
+syntax = "proto3";
+
+// The remote tap protocol. A client opens one Pull stream to a collector.
+// The collector's taps record while the stream is open, and it sends every
+// file they write, once it's complete: data files, session.json, and stats
+// snapshots. Files never change once they're complete. The client
+// acknowledges each file once it has stored it, and the collector then
+// deletes its copy.
+//
+// Reliability doesn't depend on the connection: files stay on the
+// collector's disk until they're acknowledged, and a client that reconnects
+// with the same client_id resumes where it left off.
+package remotetap.v1;
+
+option go_package = "github.com/open-telemetry/opentelemetry-collector-contrib/processor/remotetapprocessor/internal/tappb";
+
+service Tap {
+  rpc Pull(stream PullRequest) returns (stream PullResponse);
+}
+
+message PullRequest {
+  oneof msg {
+    // Start must be the first message on the stream.
+    Start start = 1;
+    Ack ack = 2;
+    // Stop ends recording. The collector sends what's left, then Done.
+    Stop stop = 3;
+  }
+}
+
+message Start {
+  // client_id identifies the client across reconnects. A stream with the
+  // same client_id takes over from an earlier one. A stream with another
+  // client_id is refused while one is open.
+  string client_id = 1;
+  // taps are the component IDs of the taps to record, such as
+  // "remotetap/after_filter". Empty means every tap.
+  repeated string taps = 2;
+  // resume lists files the client has part of, so the collector sends only
+  // the rest.
+  repeated Resume resume = 3;
+  // drain sends what's on disk without starting to record.
+  bool drain = 4;
+}
+
+message Resume {
+  string session = 1;
+  string file = 2;
+  int64 offset = 3;
+}
+
+message Ack {
+  string session = 1;
+  // file is a file the client has stored, which the collector then deletes.
+  // The collector deletes a session's directory once it's empty and the
+  // session has stopped.
+  string file = 2;
+  // sha256 is the hex SHA-256 of the whole file, as the client stored it.
+  string sha256 = 3;
+}
+
+message Stop {}
+
+message PullResponse {
+  oneof msg {
+    Started started = 1;
+    FileChunk chunk = 2;
+    Done done = 4;
+  }
+  reserved 3;
+}
+
+// Started answers Start.
+message Started {
+  // instance is the collector's host name.
+  string instance = 1;
+  // taps are the component IDs of the taps that are recording.
+  repeated string taps = 2;
+}
+
+// FileChunk is part of a complete file. Chunks of one file arrive in
+// order, and the last one has last set and the file's checksum.
+message FileChunk {
+  string session = 1;
+  string file = 2;
+  int64 offset = 3;
+  bytes data = 4;
+  bool last = 5;
+  // size and sha256 describe the whole file. Set on the last chunk.
+  int64 size = 6;
+  string sha256 = 7;
+}
+
+// Done follows Stop, once everything has been sent and acknowledged.
+message Done {}

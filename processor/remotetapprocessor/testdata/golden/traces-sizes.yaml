@@ -1,0 +1,542 @@
+resourceSpans:
+  - resource:
+      attributes:
+        - key: service.name
+          value:
+            stringValue: checkout
+        - key: service.version
+          value:
+            stringValue: 1.2.3
+        - key: k8s.namespace.name
+          value:
+            stringValue: shop
+        - key: k8s.pod.name
+          value:
+            stringValue: checkout-7d9f8c6b5-x2x9z
+        - key: tap.schema_url
+          value:
+            stringValue: https://opentelemetry.io/schemas/1.26.0
+        - key: tap.session_id
+          value:
+            stringValue: normalized
+        - key: tap.instance
+          value:
+            stringValue: normalized
+        - key: tap.processor
+          value:
+            stringValue: remotetap
+        - key: tap.resource_bytes
+          value:
+            intValue: "133"
+    schemaUrl: https://opentelemetry.io/schemas/1.26.0
+    scopeSpans:
+      - schemaUrl: https://opentelemetry.io/schemas/1.26.0
+        scope:
+          attributes:
+            - key: tap.schema_url
+              value:
+                stringValue: https://opentelemetry.io/schemas/1.26.0
+          name: go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp
+          version: 0.63.0
+        spans:
+          - attributes:
+              - key: tap.detail
+                value:
+                  stringValue: sizes
+              - key: tap.rules
+                value:
+                  arrayValue:
+                    values:
+                      - intValue: "0"
+              - key: tap.attribute_count
+                value:
+                  intValue: "4"
+              - key: tap.span_bytes
+                value:
+                  intValue: "187"
+              - key: tap.event_count
+                value:
+                  intValue: "0"
+              - key: tap.link_count
+                value:
+                  intValue: "0"
+            endTimeUnixNano: "1767268800085000000"
+            kind: 2
+            name: GET /api/pay
+            spanId: d6bd45e673a3ca23
+            startTimeUnixNano: "1767268800000000000"
+            status: {}
+            traceId: 58008a24019b25716c7df636476f5ca2
+          - attributes:
+              - key: tap.detail
+                value:
+                  stringValue: sizes
+              - key: tap.rules
+                value:
+                  arrayValue:
+                    values:
+                      - intValue: "0"
+              - key: tap.attribute_count
+                value:
+                  intValue: "2"
+              - key: tap.span_bytes
+                value:
+                  intValue: "167"
+              - key: tap.event_count
+                value:
+                  intValue: "0"
+              - key: tap.link_count
+                value:
+                  intValue: "0"
+            endTimeUnixNano: "1767268800011000000"
+            kind: 3
+            name: SELECT shop.carts
+            parentSpanId: d6bd45e673a3ca23
+            spanId: dc219d4cff404bfc
+            startTimeUnixNano: "1767268800005000000"
+            status: {}
+            traceId: 58008a24019b25716c7df636476f5ca2
+          - attributes:
+              - key: tap.detail
+                value:
+                  stringValue: sizes
+              - key: tap.rules
+                value:
+                  arrayValue:
+                    values:
+                      - intValue: "0"
+              - key: tap.attribute_count
+                value:
+                  intValue: "1"
+              - key: tap.span_bytes
+                value:
+                  intValue: "98"
+              - key: tap.event_count
+                value:
+                  intValue: "0"
+              - key: tap.link_count
+                value:
+                  intValue: "0"
+            endTimeUnixNano: "1767268800019000000"
+            kind: 3
+            name: HGET cart
+            parentSpanId: d6bd45e673a3ca23
+            spanId: 2afe6fd0c396bd77
+            startTimeUnixNano: "1767268800015000000"
+            status: {}
+            traceId: 58008a24019b25716c7df636476f5ca2
+          - attributes:
+              - key: tap.detail
+                value:
+                  stringValue: sizes
+              - key: tap.rules
+                value:
+                  arrayValue:
+                    values:
+                      - intValue: "0"
+              - key: tap.attribute_count
+                value:
+                  intValue: "1"
+              - key: tap.span_bytes
+                value:
+                  intValue: "98"
+              - key: tap.event_count
+                value:
+                  intValue: "0"
+              - key: tap.link_count
+                value:
+                  intValue: "0"
+            endTimeUnixNano: "1767268800029000000"
+            kind: 3
+            name: HGET cart
+            parentSpanId: d6bd45e673a3ca23
+            spanId: 1ecb367592381d8c
+            startTimeUnixNano: "1767268800025000000"
+            status: {}
+            traceId: 58008a24019b25716c7df636476f5ca2
+          - attributes:
+              - key: tap.detail
+                value:
+                  stringValue: sizes
+              - key: tap.rules
+                value:
+                  arrayValue:
+                    values:
+                      - intValue: "0"
+              - key: tap.attribute_count
+                value:
+                  intValue: "4"
+              - key: tap.span_bytes
+                value:
+                  intValue: "183"
+              - key: tap.event_count
+                value:
+                  intValue: "0"
+              - key: tap.link_count
+                value:
+                  intValue: "0"
+            endTimeUnixNano: "1767268810086000000"
+            kind: 2
+            name: POST /cart
+            spanId: 304067e33eb75389
+            startTimeUnixNano: "1767268810000000000"
+            status: {}
+            traceId: 93b50220503ac350480200159095442e
+          - attributes:
+              - key: tap.detail
+                value:
+                  stringValue: sizes
+              - key: tap.rules
+                value:
+                  arrayValue:
+                    values:
+                      - intValue: "0"
+              - key: tap.attribute_count
+                value:
+                  intValue: "2"
+              - key: tap.span_bytes
+                value:
+                  intValue: "167"
+              - key: tap.event_count
+                value:
+                  intValue: "0"
+              - key: tap.link_count
+                value:
+                  intValue: "0"
+            endTimeUnixNano: "1767268810010000000"
+            kind: 3
+            name: SELECT shop.carts
+            parentSpanId: 304067e33eb75389
+            spanId: 5aa56c45fcc49ae2
+            startTimeUnixNano: "1767268810005000000"
+            status: {}
+            traceId: 93b50220503ac350480200159095442e
+          - attributes:
+              - key: tap.detail
+                value:
+                  stringValue: sizes
+              - key: tap.rules
+                value:
+                  arrayValue:
+                    values:
+                      - intValue: "0"
+              - key: tap.attribute_count
+                value:
+                  intValue: "1"
+              - key: tap.span_bytes
+                value:
+                  intValue: "98"
+              - key: tap.event_count
+                value:
+                  intValue: "0"
+              - key: tap.link_count
+                value:
+                  intValue: "0"
+            endTimeUnixNano: "1767268810024000000"
+            kind: 3
+            name: HGET cart
+            parentSpanId: 304067e33eb75389
+            spanId: 9ab236d7f6fe51f8
+            startTimeUnixNano: "1767268810015000000"
+            status: {}
+            traceId: 93b50220503ac350480200159095442e
+          - attributes:
+              - key: tap.detail
+                value:
+                  stringValue: sizes
+              - key: tap.rules
+                value:
+                  arrayValue:
+                    values:
+                      - intValue: "0"
+              - key: tap.attribute_count
+                value:
+                  intValue: "1"
+              - key: tap.span_bytes
+                value:
+                  intValue: "98"
+              - key: tap.event_count
+                value:
+                  intValue: "0"
+              - key: tap.link_count
+                value:
+                  intValue: "0"
+            endTimeUnixNano: "1767268810034000000"
+            kind: 3
+            name: HGET cart
+            parentSpanId: 304067e33eb75389
+            spanId: 9196c9379ee0e393
+            startTimeUnixNano: "1767268810025000000"
+            status: {}
+            traceId: 93b50220503ac350480200159095442e
+  - resource:
+      attributes:
+        - key: service.name
+          value:
+            stringValue: cart
+        - key: service.version
+          value:
+            stringValue: 1.2.3
+        - key: k8s.namespace.name
+          value:
+            stringValue: shop
+        - key: k8s.pod.name
+          value:
+            stringValue: cart-7d9f8c6b5-x2x9z
+        - key: tap.schema_url
+          value:
+            stringValue: https://opentelemetry.io/schemas/1.26.0
+        - key: tap.session_id
+          value:
+            stringValue: normalized
+        - key: tap.instance
+          value:
+            stringValue: normalized
+        - key: tap.processor
+          value:
+            stringValue: remotetap
+        - key: tap.resource_bytes
+          value:
+            intValue: "124"
+    schemaUrl: https://opentelemetry.io/schemas/1.26.0
+    scopeSpans:
+      - schemaUrl: https://opentelemetry.io/schemas/1.26.0
+        scope:
+          attributes:
+            - key: tap.schema_url
+              value:
+                stringValue: https://opentelemetry.io/schemas/1.26.0
+          name: go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp
+          version: 0.63.0
+        spans:
+          - attributes:
+              - key: tap.detail
+                value:
+                  stringValue: sizes
+              - key: tap.rules
+                value:
+                  arrayValue:
+                    values:
+                      - intValue: "0"
+              - key: tap.attribute_count
+                value:
+                  intValue: "4"
+              - key: tap.span_bytes
+                value:
+                  intValue: "307"
+              - key: tap.event_count
+                value:
+                  intValue: "1"
+              - key: tap.link_count
+                value:
+                  intValue: "0"
+            endTimeUnixNano: "1767268800329000000"
+            kind: 2
+            name: GET /cart/checkout
+            spanId: ec651c9de8706d47
+            startTimeUnixNano: "1767268800000000000"
+            status:
+              code: 2
+            traceId: 3a879852c6ecf1a49100b831074767a4
+          - attributes:
+              - key: tap.detail
+                value:
+                  stringValue: sizes
+              - key: tap.rules
+                value:
+                  arrayValue:
+                    values:
+                      - intValue: "0"
+              - key: tap.attribute_count
+                value:
+                  intValue: "2"
+              - key: tap.span_bytes
+                value:
+                  intValue: "167"
+              - key: tap.event_count
+                value:
+                  intValue: "0"
+              - key: tap.link_count
+                value:
+                  intValue: "0"
+            endTimeUnixNano: "1767268800007000000"
+            kind: 3
+            name: SELECT shop.carts
+            parentSpanId: ec651c9de8706d47
+            spanId: 5e24253859b0cd57
+            startTimeUnixNano: "1767268800005000000"
+            status: {}
+            traceId: 3a879852c6ecf1a49100b831074767a4
+          - attributes:
+              - key: tap.detail
+                value:
+                  stringValue: sizes
+              - key: tap.rules
+                value:
+                  arrayValue:
+                    values:
+                      - intValue: "0"
+              - key: tap.attribute_count
+                value:
+                  intValue: "1"
+              - key: tap.span_bytes
+                value:
+                  intValue: "98"
+              - key: tap.event_count
+                value:
+                  intValue: "0"
+              - key: tap.link_count
+                value:
+                  intValue: "0"
+            endTimeUnixNano: "1767268800018000000"
+            kind: 3
+            name: HGET cart
+            parentSpanId: ec651c9de8706d47
+            spanId: c381cd95619f5a34
+            startTimeUnixNano: "1767268800015000000"
+            status: {}
+            traceId: 3a879852c6ecf1a49100b831074767a4
+          - attributes:
+              - key: tap.detail
+                value:
+                  stringValue: sizes
+              - key: tap.rules
+                value:
+                  arrayValue:
+                    values:
+                      - intValue: "0"
+              - key: tap.attribute_count
+                value:
+                  intValue: "1"
+              - key: tap.span_bytes
+                value:
+                  intValue: "98"
+              - key: tap.event_count
+                value:
+                  intValue: "0"
+              - key: tap.link_count
+                value:
+                  intValue: "0"
+            endTimeUnixNano: "1767268800033000000"
+            kind: 3
+            name: HGET cart
+            parentSpanId: ec651c9de8706d47
+            spanId: e15bc76fad2c4ab2
+            startTimeUnixNano: "1767268800025000000"
+            status: {}
+            traceId: 3a879852c6ecf1a49100b831074767a4
+          - attributes:
+              - key: tap.detail
+                value:
+                  stringValue: sizes
+              - key: tap.rules
+                value:
+                  arrayValue:
+                    values:
+                      - intValue: "0"
+              - key: tap.attribute_count
+                value:
+                  intValue: "4"
+              - key: tap.span_bytes
+                value:
+                  intValue: "199"
+              - key: tap.event_count
+                value:
+                  intValue: "0"
+              - key: tap.link_count
+                value:
+                  intValue: "0"
+            endTimeUnixNano: "1767268810314000000"
+            kind: 2
+            name: POST /product/{id}
+            spanId: ca889e392a3de4da
+            startTimeUnixNano: "1767268810000000000"
+            status: {}
+            traceId: cf54c2a75a94c1bb787a0cdd4c923683
+          - attributes:
+              - key: tap.detail
+                value:
+                  stringValue: sizes
+              - key: tap.rules
+                value:
+                  arrayValue:
+                    values:
+                      - intValue: "0"
+              - key: tap.attribute_count
+                value:
+                  intValue: "2"
+              - key: tap.span_bytes
+                value:
+                  intValue: "167"
+              - key: tap.event_count
+                value:
+                  intValue: "0"
+              - key: tap.link_count
+                value:
+                  intValue: "0"
+            endTimeUnixNano: "1767268810008000000"
+            kind: 3
+            name: SELECT shop.carts
+            parentSpanId: ca889e392a3de4da
+            spanId: e72f1fbca36079eb
+            startTimeUnixNano: "1767268810005000000"
+            status: {}
+            traceId: cf54c2a75a94c1bb787a0cdd4c923683
+          - attributes:
+              - key: tap.detail
+                value:
+                  stringValue: sizes
+              - key: tap.rules
+                value:
+                  arrayValue:
+                    values:
+                      - intValue: "0"
+              - key: tap.attribute_count
+                value:
+                  intValue: "1"
+              - key: tap.span_bytes
+                value:
+                  intValue: "98"
+              - key: tap.event_count
+                value:
+                  intValue: "0"
+              - key: tap.link_count
+                value:
+                  intValue: "0"
+            endTimeUnixNano: "1767268810018000000"
+            kind: 3
+            name: HGET cart
+            parentSpanId: ca889e392a3de4da
+            spanId: 79b5fece4ecd7769
+            startTimeUnixNano: "1767268810015000000"
+            status: {}
+            traceId: cf54c2a75a94c1bb787a0cdd4c923683
+          - attributes:
+              - key: tap.detail
+                value:
+                  stringValue: sizes
+              - key: tap.rules
+                value:
+                  arrayValue:
+                    values:
+                      - intValue: "0"
+              - key: tap.attribute_count
+                value:
+                  intValue: "1"
+              - key: tap.span_bytes
+                value:
+                  intValue: "98"
+              - key: tap.event_count
+                value:
+                  intValue: "0"
+              - key: tap.link_count
+                value:
+                  intValue: "0"
+            endTimeUnixNano: "1767268810032000000"
+            kind: 3
+            name: HGET cart
+            parentSpanId: ca889e392a3de4da
+            spanId: 201a5c19dd4b6295
+            startTimeUnixNano: "1767268810025000000"
+            status: {}
+            traceId: cf54c2a75a94c1bb787a0cdd4c923683

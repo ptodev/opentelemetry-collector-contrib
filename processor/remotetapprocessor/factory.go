@@ -11,63 +11,52 @@ import (
 	"go.opentelemetry.io/collector/processor"
 	"go.opentelemetry.io/collector/processor/processorhelper"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/sharedcomponent"
 	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/remotetapprocessor/internal/metadata"
 )
 
-var processors = sharedcomponent.NewSharedComponents()
-
+// NewFactory returns the processor's factory.
 func NewFactory() processor.Factory {
 	return processor.NewFactory(
 		metadata.Type,
 		createDefaultConfig,
-		processor.WithTraces(createTraceProcessor, metadata.TracesStability),
-		processor.WithMetrics(createMetricsProcessor, metadata.MetricsStability),
-		processor.WithLogs(createLogsProcessor, metadata.LogsStability),
+		processor.WithTraces(createTraces, metadata.TracesStability),
+		processor.WithLogs(createLogs, metadata.LogsStability),
+		processor.WithMetrics(createMetrics, metadata.MetricsStability),
 	)
 }
 
-func createMetricsProcessor(ctx context.Context, params processor.Settings, cfg component.Config, c consumer.Metrics) (processor.Metrics, error) {
-	rCfg := cfg.(*Config)
-	p := processors.GetOrAdd(cfg, func() component.Component {
-		return newProcessor(params, rCfg)
-	})
-	fn := p.Unwrap().(*wsprocessor).ConsumeMetrics
-	return processorhelper.NewMetrics(ctx, params, cfg, c,
-		fn,
-		processorhelper.WithCapabilities(consumer.Capabilities{
-			MutatesData: false,
-		}),
-		processorhelper.WithStart(p.Start),
-		processorhelper.WithShutdown(p.Shutdown))
+// The tap never changes the data it passes on.
+var capabilities = processorhelper.WithCapabilities(consumer.Capabilities{MutatesData: false})
+
+func createTraces(ctx context.Context, set processor.Settings, cfg component.Config, next consumer.Traces) (processor.Traces, error) {
+	c := cfg.(*Config)
+	r, err := newSpanRules(c.Traces.Rules, set.TelemetrySettings)
+	if err != nil {
+		return nil, err
+	}
+	t := &tracesTap{tap: newTap(c, "traces", c.Traces.Rules, set), rules: r}
+	return processorhelper.NewTraces(ctx, set, cfg, next, t.process, capabilities,
+		processorhelper.WithStart(t.start), processorhelper.WithShutdown(t.shutdown))
 }
 
-func createLogsProcessor(ctx context.Context, params processor.Settings, cfg component.Config, c consumer.Logs) (processor.Logs, error) {
-	rCfg := cfg.(*Config)
-	p := processors.GetOrAdd(cfg, func() component.Component {
-		return newProcessor(params, rCfg)
-	})
-	fn := p.Unwrap().(*wsprocessor).ConsumeLogs
-	return processorhelper.NewLogs(ctx, params, cfg, c,
-		fn,
-		processorhelper.WithCapabilities(consumer.Capabilities{
-			MutatesData: false,
-		}),
-		processorhelper.WithStart(p.Start),
-		processorhelper.WithShutdown(p.Shutdown))
+func createLogs(ctx context.Context, set processor.Settings, cfg component.Config, next consumer.Logs) (processor.Logs, error) {
+	c := cfg.(*Config)
+	r, err := newLogRules(c.Logs.Rules, set.TelemetrySettings)
+	if err != nil {
+		return nil, err
+	}
+	t := &logsTap{tap: newTap(c, "logs", c.Logs.Rules, set), rules: r}
+	return processorhelper.NewLogs(ctx, set, cfg, next, t.process, capabilities,
+		processorhelper.WithStart(t.start), processorhelper.WithShutdown(t.shutdown))
 }
 
-func createTraceProcessor(ctx context.Context, params processor.Settings, cfg component.Config, c consumer.Traces) (processor.Traces, error) {
-	rCfg := cfg.(*Config)
-	p := processors.GetOrAdd(cfg, func() component.Component {
-		return newProcessor(params, rCfg)
-	})
-	fn := p.Unwrap().(*wsprocessor).ConsumeTraces
-	return processorhelper.NewTraces(ctx, params, cfg, c,
-		fn,
-		processorhelper.WithCapabilities(consumer.Capabilities{
-			MutatesData: false,
-		}),
-		processorhelper.WithStart(p.Start),
-		processorhelper.WithShutdown(p.Shutdown))
+func createMetrics(ctx context.Context, set processor.Settings, cfg component.Config, next consumer.Metrics) (processor.Metrics, error) {
+	c := cfg.(*Config)
+	r, err := newPointRules(c.Metrics.Rules, set.TelemetrySettings)
+	if err != nil {
+		return nil, err
+	}
+	t := &metricsTap{tap: newTap(c, "metrics", c.Metrics.Rules, set), rules: r}
+	return processorhelper.NewMetrics(ctx, set, cfg, next, t.process, capabilities,
+		processorhelper.WithStart(t.start), processorhelper.WithShutdown(t.shutdown))
 }

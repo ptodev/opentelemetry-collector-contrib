@@ -1,0 +1,727 @@
+resourceMetrics:
+  - resource:
+      attributes:
+        - key: k8s.namespace.name
+          value:
+            stringValue: shop
+        - key: k8s.pod.name
+          value:
+            stringValue: cart-7d9f8c6b5-x2x9z
+        - key: service.name
+          value:
+            stringValue: cart
+        - key: service.version
+          value:
+            stringValue: 1.2.3
+        - key: tap.instance
+          value:
+            stringValue: normalized
+        - key: tap.processor
+          value:
+            stringValue: remotetap
+        - key: tap.resource_bytes
+          value:
+            intValue: "124"
+        - key: tap.schema_url
+          value:
+            stringValue: https://opentelemetry.io/schemas/1.26.0
+        - key: tap.session_id
+          value:
+            stringValue: normalized
+    schemaUrl: https://opentelemetry.io/schemas/1.26.0
+    scopeMetrics:
+      - metrics:
+          - gauge:
+              dataPoints:
+                - asDouble: 0.54
+                  attributes:
+                    - key: tap.attribute_count
+                      value:
+                        intValue: "0"
+                    - key: tap.detail
+                      value:
+                        stringValue: keys
+                    - key: tap.point_bytes
+                      value:
+                        intValue: "18"
+                    - key: tap.rules
+                      value:
+                        arrayValue:
+                          values:
+                            - intValue: "0"
+                  timeUnixNano: "1767268800000000000"
+            name: process.cpu.utilization
+            unit: "1"
+          - name: http.server.request.count
+            sum:
+              aggregationTemporality: 2
+              dataPoints:
+                - asInt: "66"
+                  attributes:
+                    - key: http.request.method
+                      value:
+                        stringValue: GET
+                    - key: http.route
+                      value:
+                        stringValue: /api/pay
+                    - key: tap.attribute_count
+                      value:
+                        intValue: "2"
+                    - key: tap.detail
+                      value:
+                        stringValue: keys
+                    - key: tap.point_bytes
+                      value:
+                        intValue: "83"
+                    - key: tap.rules
+                      value:
+                        arrayValue:
+                          values:
+                            - intValue: "0"
+                  startTimeUnixNano: "1767268800000000000"
+                  timeUnixNano: "1767268800000000000"
+                - asInt: "31"
+                  attributes:
+                    - key: http.request.method
+                      value:
+                        stringValue: GET
+                    - key: http.route
+                      value:
+                        stringValue: /cart
+                    - key: tap.attribute_count
+                      value:
+                        intValue: "2"
+                    - key: tap.detail
+                      value:
+                        stringValue: keys
+                    - key: tap.point_bytes
+                      value:
+                        intValue: "80"
+                    - key: tap.rules
+                      value:
+                        arrayValue:
+                          values:
+                            - intValue: "0"
+                  startTimeUnixNano: "1767268800000000000"
+                  timeUnixNano: "1767268800000000000"
+                - asInt: "16"
+                  attributes:
+                    - key: http.request.method
+                      value:
+                        stringValue: GET
+                    - key: http.route
+                      value:
+                        stringValue: /cart/checkout
+                    - key: tap.attribute_count
+                      value:
+                        intValue: "2"
+                    - key: tap.detail
+                      value:
+                        stringValue: keys
+                    - key: tap.point_bytes
+                      value:
+                        intValue: "89"
+                    - key: tap.rules
+                      value:
+                        arrayValue:
+                          values:
+                            - intValue: "0"
+                  startTimeUnixNano: "1767268800000000000"
+                  timeUnixNano: "1767268800000000000"
+                - asInt: "44"
+                  attributes:
+                    - key: http.request.method
+                      value:
+                        stringValue: GET
+                    - key: http.route
+                      value:
+                        stringValue: /product/{id}
+                    - key: tap.attribute_count
+                      value:
+                        intValue: "2"
+                    - key: tap.detail
+                      value:
+                        stringValue: keys
+                    - key: tap.point_bytes
+                      value:
+                        intValue: "88"
+                    - key: tap.rules
+                      value:
+                        arrayValue:
+                          values:
+                            - intValue: "0"
+                  startTimeUnixNano: "1767268800000000000"
+                  timeUnixNano: "1767268800000000000"
+              isMonotonic: true
+            unit: '{request}'
+          - histogram:
+              aggregationTemporality: 2
+              dataPoints:
+                - attributes:
+                    - key: http.route
+                      value:
+                        stringValue: /api/pay
+                    - key: tap.attribute_count
+                      value:
+                        intValue: "1"
+                    - key: tap.detail
+                      value:
+                        stringValue: keys
+                    - key: tap.point_bytes
+                      value:
+                        intValue: "154"
+                    - key: tap.rules
+                      value:
+                        arrayValue:
+                          values:
+                            - intValue: "0"
+                  bucketCounts:
+                    - "10"
+                    - "14"
+                    - "17"
+                    - "1"
+                    - "14"
+                    - "2"
+                  count: "58"
+                  explicitBounds:
+                    - 0.01
+                    - 0.05
+                    - 0.1
+                    - 0.5
+                    - 1
+                  startTimeUnixNano: "1767268800000000000"
+                  sum: 4.0600000000000005
+                  timeUnixNano: "1767268800000000000"
+                - attributes:
+                    - key: http.route
+                      value:
+                        stringValue: /cart
+                    - key: tap.attribute_count
+                      value:
+                        intValue: "1"
+                    - key: tap.detail
+                      value:
+                        stringValue: keys
+                    - key: tap.point_bytes
+                      value:
+                        intValue: "151"
+                    - key: tap.rules
+                      value:
+                        arrayValue:
+                          values:
+                            - intValue: "0"
+                  bucketCounts:
+                    - "3"
+                    - "7"
+                    - "7"
+                    - "0"
+                    - "12"
+                    - "2"
+                  count: "31"
+                  explicitBounds:
+                    - 0.01
+                    - 0.05
+                    - 0.1
+                    - 0.5
+                    - 1
+                  startTimeUnixNano: "1767268800000000000"
+                  sum: 2.1700000000000004
+                  timeUnixNano: "1767268800000000000"
+                - attributes:
+                    - key: http.route
+                      value:
+                        stringValue: /cart/checkout
+                    - key: tap.attribute_count
+                      value:
+                        intValue: "1"
+                    - key: tap.detail
+                      value:
+                        stringValue: keys
+                    - key: tap.point_bytes
+                      value:
+                        intValue: "160"
+                    - key: tap.rules
+                      value:
+                        arrayValue:
+                          values:
+                            - intValue: "0"
+                  bucketCounts:
+                    - "18"
+                    - "5"
+                    - "0"
+                    - "5"
+                    - "11"
+                    - "3"
+                  count: "42"
+                  explicitBounds:
+                    - 0.01
+                    - 0.05
+                    - 0.1
+                    - 0.5
+                    - 1
+                  startTimeUnixNano: "1767268800000000000"
+                  sum: 2.9400000000000004
+                  timeUnixNano: "1767268800000000000"
+                - attributes:
+                    - key: http.route
+                      value:
+                        stringValue: /product/{id}
+                    - key: tap.attribute_count
+                      value:
+                        intValue: "1"
+                    - key: tap.detail
+                      value:
+                        stringValue: keys
+                    - key: tap.point_bytes
+                      value:
+                        intValue: "159"
+                    - key: tap.rules
+                      value:
+                        arrayValue:
+                          values:
+                            - intValue: "0"
+                  bucketCounts:
+                    - "3"
+                    - "17"
+                    - "19"
+                    - "15"
+                    - "8"
+                    - "10"
+                  count: "72"
+                  explicitBounds:
+                    - 0.01
+                    - 0.05
+                    - 0.1
+                    - 0.5
+                    - 1
+                  startTimeUnixNano: "1767268800000000000"
+                  sum: 5.040000000000001
+                  timeUnixNano: "1767268800000000000"
+            name: http.server.request.duration
+            unit: s
+          - exponentialHistogram:
+              aggregationTemporality: 1
+              dataPoints:
+                - attributes:
+                    - key: rpc.service
+                      value:
+                        stringValue: payments.Charge
+                    - key: tap.attribute_count
+                      value:
+                        intValue: "1"
+                    - key: tap.detail
+                      value:
+                        stringValue: keys
+                    - key: tap.point_bytes
+                      value:
+                        intValue: "83"
+                    - key: tap.rules
+                      value:
+                        arrayValue:
+                          values:
+                            - intValue: "0"
+                  count: "12"
+                  negative: {}
+                  positive:
+                    bucketCounts:
+                      - "3"
+                      - "5"
+                      - "4"
+                    offset: 1
+                  scale: 2
+                  startTimeUnixNano: "1767268800000000000"
+                  sum: 48.5
+                  timeUnixNano: "1767268800000000000"
+            name: rpc.client.duration
+            unit: ms
+          - name: gc.pause
+            summary:
+              dataPoints:
+                - attributes:
+                    - key: tap.attribute_count
+                      value:
+                        intValue: "0"
+                    - key: tap.detail
+                      value:
+                        stringValue: keys
+                    - key: tap.point_bytes
+                      value:
+                        intValue: "56"
+                    - key: tap.rules
+                      value:
+                        arrayValue:
+                          values:
+                            - intValue: "0"
+                  count: "13"
+                  quantileValues:
+                    - quantile: 0.99
+                      value: 0.004
+                  startTimeUnixNano: "1767268800000000000"
+                  sum: 0.25
+                  timeUnixNano: "1767268800000000000"
+            unit: s
+        scope:
+          name: go.opentelemetry.io/otel/sdk/metric
+  - resource:
+      attributes:
+        - key: k8s.namespace.name
+          value:
+            stringValue: shop
+        - key: k8s.pod.name
+          value:
+            stringValue: checkout-7d9f8c6b5-x2x9z
+        - key: service.name
+          value:
+            stringValue: checkout
+        - key: service.version
+          value:
+            stringValue: 1.2.3
+        - key: tap.instance
+          value:
+            stringValue: normalized
+        - key: tap.processor
+          value:
+            stringValue: remotetap
+        - key: tap.resource_bytes
+          value:
+            intValue: "133"
+        - key: tap.schema_url
+          value:
+            stringValue: https://opentelemetry.io/schemas/1.26.0
+        - key: tap.session_id
+          value:
+            stringValue: normalized
+    schemaUrl: https://opentelemetry.io/schemas/1.26.0
+    scopeMetrics:
+      - metrics:
+          - gauge:
+              dataPoints:
+                - asDouble: 0.555
+                  attributes:
+                    - key: tap.attribute_count
+                      value:
+                        intValue: "0"
+                    - key: tap.detail
+                      value:
+                        stringValue: keys
+                    - key: tap.point_bytes
+                      value:
+                        intValue: "18"
+                    - key: tap.rules
+                      value:
+                        arrayValue:
+                          values:
+                            - intValue: "0"
+                  timeUnixNano: "1767268800000000000"
+            name: process.cpu.utilization
+            unit: "1"
+          - name: http.server.request.count
+            sum:
+              aggregationTemporality: 2
+              dataPoints:
+                - asInt: "18"
+                  attributes:
+                    - key: http.request.method
+                      value:
+                        stringValue: GET
+                    - key: http.route
+                      value:
+                        stringValue: /api/pay
+                    - key: tap.attribute_count
+                      value:
+                        intValue: "2"
+                    - key: tap.detail
+                      value:
+                        stringValue: keys
+                    - key: tap.point_bytes
+                      value:
+                        intValue: "83"
+                    - key: tap.rules
+                      value:
+                        arrayValue:
+                          values:
+                            - intValue: "0"
+                  startTimeUnixNano: "1767268800000000000"
+                  timeUnixNano: "1767268800000000000"
+                - asInt: "71"
+                  attributes:
+                    - key: http.request.method
+                      value:
+                        stringValue: GET
+                    - key: http.route
+                      value:
+                        stringValue: /cart
+                    - key: tap.attribute_count
+                      value:
+                        intValue: "2"
+                    - key: tap.detail
+                      value:
+                        stringValue: keys
+                    - key: tap.point_bytes
+                      value:
+                        intValue: "80"
+                    - key: tap.rules
+                      value:
+                        arrayValue:
+                          values:
+                            - intValue: "0"
+                  startTimeUnixNano: "1767268800000000000"
+                  timeUnixNano: "1767268800000000000"
+                - asInt: "63"
+                  attributes:
+                    - key: http.request.method
+                      value:
+                        stringValue: GET
+                    - key: http.route
+                      value:
+                        stringValue: /cart/checkout
+                    - key: tap.attribute_count
+                      value:
+                        intValue: "2"
+                    - key: tap.detail
+                      value:
+                        stringValue: keys
+                    - key: tap.point_bytes
+                      value:
+                        intValue: "89"
+                    - key: tap.rules
+                      value:
+                        arrayValue:
+                          values:
+                            - intValue: "0"
+                  startTimeUnixNano: "1767268800000000000"
+                  timeUnixNano: "1767268800000000000"
+                - asInt: "16"
+                  attributes:
+                    - key: http.request.method
+                      value:
+                        stringValue: GET
+                    - key: http.route
+                      value:
+                        stringValue: /product/{id}
+                    - key: tap.attribute_count
+                      value:
+                        intValue: "2"
+                    - key: tap.detail
+                      value:
+                        stringValue: keys
+                    - key: tap.point_bytes
+                      value:
+                        intValue: "88"
+                    - key: tap.rules
+                      value:
+                        arrayValue:
+                          values:
+                            - intValue: "0"
+                  startTimeUnixNano: "1767268800000000000"
+                  timeUnixNano: "1767268800000000000"
+              isMonotonic: true
+            unit: '{request}'
+          - histogram:
+              aggregationTemporality: 2
+              dataPoints:
+                - attributes:
+                    - key: http.route
+                      value:
+                        stringValue: /api/pay
+                    - key: tap.attribute_count
+                      value:
+                        intValue: "1"
+                    - key: tap.detail
+                      value:
+                        stringValue: keys
+                    - key: tap.point_bytes
+                      value:
+                        intValue: "154"
+                    - key: tap.rules
+                      value:
+                        arrayValue:
+                          values:
+                            - intValue: "0"
+                  bucketCounts:
+                    - "3"
+                    - "0"
+                    - "3"
+                    - "19"
+                    - "10"
+                    - "8"
+                  count: "43"
+                  explicitBounds:
+                    - 0.01
+                    - 0.05
+                    - 0.1
+                    - 0.5
+                    - 1
+                  startTimeUnixNano: "1767268800000000000"
+                  sum: 3.0100000000000002
+                  timeUnixNano: "1767268800000000000"
+                - attributes:
+                    - key: http.route
+                      value:
+                        stringValue: /cart
+                    - key: tap.attribute_count
+                      value:
+                        intValue: "1"
+                    - key: tap.detail
+                      value:
+                        stringValue: keys
+                    - key: tap.point_bytes
+                      value:
+                        intValue: "151"
+                    - key: tap.rules
+                      value:
+                        arrayValue:
+                          values:
+                            - intValue: "0"
+                  bucketCounts:
+                    - "2"
+                    - "14"
+                    - "14"
+                    - "8"
+                    - "6"
+                    - "18"
+                  count: "62"
+                  explicitBounds:
+                    - 0.01
+                    - 0.05
+                    - 0.1
+                    - 0.5
+                    - 1
+                  startTimeUnixNano: "1767268800000000000"
+                  sum: 4.340000000000001
+                  timeUnixNano: "1767268800000000000"
+                - attributes:
+                    - key: http.route
+                      value:
+                        stringValue: /cart/checkout
+                    - key: tap.attribute_count
+                      value:
+                        intValue: "1"
+                    - key: tap.detail
+                      value:
+                        stringValue: keys
+                    - key: tap.point_bytes
+                      value:
+                        intValue: "160"
+                    - key: tap.rules
+                      value:
+                        arrayValue:
+                          values:
+                            - intValue: "0"
+                  bucketCounts:
+                    - "19"
+                    - "16"
+                    - "13"
+                    - "3"
+                    - "5"
+                    - "11"
+                  count: "67"
+                  explicitBounds:
+                    - 0.01
+                    - 0.05
+                    - 0.1
+                    - 0.5
+                    - 1
+                  startTimeUnixNano: "1767268800000000000"
+                  sum: 4.69
+                  timeUnixNano: "1767268800000000000"
+                - attributes:
+                    - key: http.route
+                      value:
+                        stringValue: /product/{id}
+                    - key: tap.attribute_count
+                      value:
+                        intValue: "1"
+                    - key: tap.detail
+                      value:
+                        stringValue: keys
+                    - key: tap.point_bytes
+                      value:
+                        intValue: "159"
+                    - key: tap.rules
+                      value:
+                        arrayValue:
+                          values:
+                            - intValue: "0"
+                  bucketCounts:
+                    - "19"
+                    - "13"
+                    - "5"
+                    - "19"
+                    - "8"
+                    - "9"
+                  count: "73"
+                  explicitBounds:
+                    - 0.01
+                    - 0.05
+                    - 0.1
+                    - 0.5
+                    - 1
+                  startTimeUnixNano: "1767268800000000000"
+                  sum: 5.11
+                  timeUnixNano: "1767268800000000000"
+            name: http.server.request.duration
+            unit: s
+          - exponentialHistogram:
+              aggregationTemporality: 1
+              dataPoints:
+                - attributes:
+                    - key: rpc.service
+                      value:
+                        stringValue: payments.Charge
+                    - key: tap.attribute_count
+                      value:
+                        intValue: "1"
+                    - key: tap.detail
+                      value:
+                        stringValue: keys
+                    - key: tap.point_bytes
+                      value:
+                        intValue: "83"
+                    - key: tap.rules
+                      value:
+                        arrayValue:
+                          values:
+                            - intValue: "0"
+                  count: "12"
+                  negative: {}
+                  positive:
+                    bucketCounts:
+                      - "3"
+                      - "5"
+                      - "4"
+                    offset: 1
+                  scale: 2
+                  startTimeUnixNano: "1767268800000000000"
+                  sum: 48.5
+                  timeUnixNano: "1767268800000000000"
+            name: rpc.client.duration
+            unit: ms
+          - name: gc.pause
+            summary:
+              dataPoints:
+                - attributes:
+                    - key: tap.attribute_count
+                      value:
+                        intValue: "0"
+                    - key: tap.detail
+                      value:
+                        stringValue: keys
+                    - key: tap.point_bytes
+                      value:
+                        intValue: "56"
+                    - key: tap.rules
+                      value:
+                        arrayValue:
+                          values:
+                            - intValue: "0"
+                  count: "11"
+                  quantileValues:
+                    - quantile: 0.99
+                      value: 0.004
+                  startTimeUnixNano: "1767268800000000000"
+                  sum: 0.25
+                  timeUnixNano: "1767268800000000000"
+            unit: s
+        scope:
+          name: go.opentelemetry.io/otel/sdk/metric

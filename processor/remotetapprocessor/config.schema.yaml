@@ -1,8 +1,52 @@
+$defs:
+  rule_config:
+    description: RuleConfig chooses records and their detail level. A record matches when it meets every condition in Where and falls within TracePercent. When several rules match, the highest detail wins.
+    type: object
+    properties:
+      detail:
+        description: Detail is sizes, keys, or full.
+        type: string
+      trace_percent:
+        description: TracePercent keeps this percentage of traces, chosen by hashing the trace ID, so every instance keeps the same traces. Zero means no sampling. Not allowed for metrics.
+        type: number
+        x-customType: float64
+      where:
+        description: Where holds OTTL conditions, all of which must be true. Paths must start with their context, such as span.name or resource.attributes["x"].
+        type: array
+        items:
+          type: string
+  signal_config:
+    description: SignalConfig holds the rules for one signal. A signal without rules is never recorded.
+    type: object
+    properties:
+      rules:
+        type: array
+        items:
+          $ref: rule_config
+description: Config is the processor's configuration.
 type: object
 properties:
-  limit:
-    description: Limit is a float that indicates the maximum number of messages repeated through the websocket by this processor in messages per second. Defaults to 1.
-    type: number
-    x-customType: golang.org/x/time/rate.Limit
-allOf:
-  - $ref: go.opentelemetry.io/collector/config/confighttp.server_config
+  directory:
+    description: Directory is where sessions are written until a client pulls them. Required.
+    type: string
+  grpc:
+    description: GRPC is the server clients pull from. Taps in the same collector with the same endpoint share one server.
+    $ref: go.opentelemetry.io/collector/config/configgrpc.server_config
+  logs:
+    $ref: signal_config
+  max_buffer_mib:
+    description: MaxBufferMiB bounds the memory held by copies waiting to be written. While it's full, the tap copies nothing, so a burst bigger than the buffer loses records.
+    type: integer
+    x-customType: int64
+  max_disk_mib:
+    description: MaxDiskMiB is the total size of everything in Directory. While it's reached, the tap copies nothing, until a client has pulled enough files.
+    type: integer
+    x-customType: int64
+  max_file_mib:
+    description: MaxFileMiB is the uncompressed size at which a file is closed and a new one started. duckdb-otlp reads files of up to 100 MB after they're decompressed, so it's at most maxFileMiB.
+    type: integer
+    x-customType: int64
+  metrics:
+    $ref: signal_config
+  traces:
+    $ref: signal_config
